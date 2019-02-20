@@ -1,0 +1,75 @@
+// 小米8青春版
+var xiaomi={
+    "cid":201901,
+    "startid":201901,
+    "sortid":201901,
+    "listname":"小米8 青春版",
+    "hostimg":"../img/listimgs/201901_01.jpg",
+    "simple_describe":"潮流镜面渐变色，2400万自拍旗舰",
+    "particular_describe":"潮流镜面渐变色 / 2400万自拍旗舰 / 7.5mm超薄机身 / 6.26小刘海全面屏 / AI裸妆美颜 / 骁龙660AIE处理器",
+    "original_price":1399,
+    "present_price":1299,
+    "version_color":["深空灰","梦幻蓝","暮光金"],
+    "color_img":[  
+                    {  
+                        "img1":"../img/listimgs/201901_02.jpg",
+                        "img2":"../img/listimgs/201901_03.jpg",
+                        "img3":"../img/listimgs/201901_04.jpg",
+                        "img4":"../img/listimgs/201901_05.jpg"
+                    },
+                    {
+                        "img1":"../img/listimgs/201901_06.jpg",
+                        "img2":"../img/listimgs/201901_07.jpg",
+                        "img3":"../img/listimgs/201901_08.jpg",
+                        "img4":"../img/listimgs/201901_09.jpg"
+
+
+                    },
+                    {
+                        "img1":"../img/listimgs/201901_10.jpg",
+                        "img2":"../img/listimgs/201901_11.jpg",
+                        "img3":"../img/listimgs/201901_12.jpg",
+                        "img4":"../img/listimgs/201901_13.jpg"
+
+                    }
+                ],
+    "versions_information":[
+                                {
+                                    "version_name":"4GB+6GB 全网通",
+                                    "version_id":1,
+                                    "original_price":1399,
+                                    "present_price":1299,
+                                    "color":["深空灰"],               
+                                    "currentcolornum":[100]
+                                },
+                                {
+                                    "version_name":"6GB+6GB 全网通",
+                                    "version_id":2,
+                                    "original_price":1699,
+                                    "present_price":1499,
+                                    "color":["深空灰","梦幻蓝","暮光金"],               
+                                    "currentcolornum":[100,200,300]
+
+                                },
+                                {
+                                    "version_name":"6GB+128GB 全网通",
+                                    "version_id":3,
+                                    "original_price":1999,
+                                    "present_price":1999,
+                                    "color":["深空灰","梦幻蓝","暮光金"],               
+                                    "currentcolornum":[40,50,60]
+                                }
+                            ],
+    "Explanation1":"「4GB+64GB 深空灰 1299元」",
+    "Explanation2":"「6GB+64GB 全色系1499元」"
+
+
+};
+
+
+
+
+
+
+
+

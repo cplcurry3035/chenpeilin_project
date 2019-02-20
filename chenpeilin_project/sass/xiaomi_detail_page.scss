@@ -1,0 +1,651 @@
+#suck_option{
+        height: 64px;
+        background:#fff;
+        box-shadow:3px 3px 2px 2px #eee;
+        z-index:500;
+        width: 100%;
+        // position:relative;
+        border-top: 1px solid #ccc;
+        margin-bottom: 3px;
+
+        p{
+            height: 64px;
+            line-height: 64px;
+            font-size: 20px;
+            padding:0 10px;
+            float: left;
+            
+        };
+        .suck_option{
+            float: right;
+            margin-top: 14px;
+            span{
+                display:inline-block;
+                border-right: 1px solid #ccc;padding:0 5px;
+                margin-top: 5px;
+                &:hover{
+                    cursor:pointer;
+                };
+            };
+            span:nth-of-type(5){
+                 border-right: 0 none;
+            }
+            .quickbuy{
+                width: 120px;
+                height:30px;
+                line-height: 30px;
+                text-align: center;
+                background:#FF6B00;
+                color:#fff;
+                border-right: 0 none;
+                display:inline-block;
+                
+            }
+            
+
+        };
+
+
+};
+.suckfixed{
+    position:fixed;
+    left: 0;
+    top: 0;
+};
+
+
+
+#list_details{
+
+    .container{
+
+        background:#FF6B00;
+        position:relative;
+        .list_details{
+            position:absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 600px;
+        };
+        .list_details0{
+            background:lemonchiffon;
+        };
+        .list_details1{
+            background:red;
+        };
+        .list_details2{
+            background:blue;
+        }
+        .list_details3{
+            background:orange;
+        }
+        .list_details4{
+            background:pink;
+        }
+       
+    };
+};
+// 详情页
+.list_details_host{
+    background:#fff;
+    height: 1613px;
+    z-index:1;
+    position:relative;
+    // color:#FF6B00;
+    #slideshow{
+        
+        height: 494px;
+        width: 544px;
+        // margin:0;
+        // overflow:hidden;
+        float: left;
+        margin-top:88px;
+        .swiper-wrapper{
+            height: 494px;
+            width: 544px;
+            .swiper-silde{
+                height: 544px !important;
+                a{  
+                    display:block;
+                    height: 494px;
+                    width: 544px;
+                    img{
+                        height: 494px !important;
+                        width: 544px !important;
+                        // display:block;
+                    }
+                } 
+            }
+            
+
+        };
+
+        .swiper-pagination{
+            margin-left:20px !important;
+            width: 544px !important;
+            bottom:0px !important;
+            span{
+                background:red;
+                width: 50px !important;
+                height:5px !important;
+                border-radius:3px;
+            }
+        }
+    };
+    .swiperfixed{
+        position:fixed;
+        // bottom:0px;
+    };
+    .swiper-container{
+        background:#fff !important;
+    };
+    //  .swiper-wrapper .swiper-slide:nth-of-type(1){
+    //     display:none !important;
+
+    // }
+    #list_right{
+        float: right;
+        width: 615px;
+        height: 1613px;
+        background:#fff;
+        // border: 1px solid #000;
+        margin-left: 65px;
+        h1{
+            height: 38px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 24px;
+            color:#000;
+            
+        };
+        // span{
+        //     color:#FF6B00;
+        //     font-size: 14px;
+        //     line-height: 20px;
+        // }
+        span:nth-of-type(3){
+            color:#aaa;
+
+        };
+        p:nth-of-type(2){
+            color:#FF6B00;
+            height: 36px;
+            line-height: 36px;
+            font-weight: bold;
+        };
+        .phone_price{
+            span{
+            display:inline-block;
+            color:#FF6700;
+            font-size: 18px;
+            font-weight: bold;
+            height:30px;
+            line-height: 30px;
+            
+
+            };
+            span:nth-of-type(2) del{
+                color:#ccc;
+                font-size: 14px;
+
+            };
+        };
+        .listright1{
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            height:52px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            span{
+                display:inline-block;
+                height: 24px;
+                color:#000;
+            }
+            span:nth-of-type(1){
+                width: 80px;
+                margin-right: 8px;
+                line-height: 24px;
+                margin-top: 12px;
+                color:#fff;
+                background:#FF6700;
+                text-align: center;
+                line-height: 24px;
+            };
+            
+        };
+        .listright2{
+            width: 558px;
+            height: 44px;
+            border: 1px solid #ccc;
+            padding:30px 0 30px 50px;
+            background:#FAFAFA;
+            font-size: 16px;
+            position:relative;
+            i{
+                position:absolute;
+                display:block;
+                width:20px;
+                height:20px;
+                left: 25px;
+                top:28px;
+                background:url('../img/xiaomi_sprite_sheet.png') -200px -90px;
+            }
+            span{
+                color:#FF6700;
+            }
+        };
+        .version{
+            h1{
+                height: 48px;
+                line-height: 48px;
+                font-size: 20px;
+                font-weight: bold;
+                color:#000;
+                
+            };
+            ul{
+                li{
+                    float: left;
+                    width: 300px;
+                    height: 44px;
+                    border: 1px solid #ccc;
+                    margin-bottom: 6px;
+                    padding:9px 26px 14px 26px;
+                    box-sizing:border-box;
+                    color:#000;
+                    font-size: 20px;
+                    
+                    span{
+                        
+                        font-size: 16px;
+                        float: left;
+                        color:#000;
+
+                        
+                    };
+                    span:nth-of-type(2){
+                        color:#ccc;
+                        font-size: 14px;
+                        float: right;
+                        
+                    }
+                    
+                };
+                li:nth-child(2n+1){
+                    margin-right: 6px;
+
+                }
+            }
+        };
+        .colorversion{
+            
+            .color_tab_control{
+                height: 120px;
+                position:relative;
+                ul{
+                    position:absolute;
+                    left:0px;
+                    top:0px;
+                    display:none;
+                    li{
+                        text-align: center;
+                        position:relative;
+                        i{
+                            position:absolute;
+                            display:block;
+                            width: 16px;
+                            height: 13px;
+                            background:red;
+                            left:100px;
+                            top:13px;
+                            img{
+                                display:block;
+                                width:16px;
+                                height:13px;
+                            }
+                        }
+
+
+
+                        
+                    }
+                };
+                ul:nth-of-type(1){
+                    display:block;
+                }
+            }
+        };
+        .guarantee{
+            width: 604px;
+            margin-bottom: 16px;
+            .header{
+                h1{
+                    float: left;
+                    height:50px;
+                    line-height: 50px;
+                    color:#000;  
+                    font-size: 20px;
+                    font-weight: bold;
+                    width: 234px;
+                    margin:0;
+                    
+                    
+                };
+                span{
+                    display:block;
+                    float: right;
+                    height: 50px;
+                    line-height: 50px;
+                    color:#FF6700;
+                    width: 98px;
+                    
+                };
+
+            };
+            .serve{
+                height: 142px;
+                border: 1px solid #ccc;
+                .serve_l{
+                    float: left;
+                    height: 142px;
+                    width: 137px;
+                    position:relative;
+                    i{
+                        display:block;
+                        width: 50px;
+                        height:50px;
+                        background:url('../img/xiaomi_sprite_sheet.png') -240px -90px;
+                        position:absolute;
+                        right:10px;
+                        top:30px;
+                    }
+                    input{
+                        margin-left: 38px;
+                        margin-top: 52px;
+                    }
+
+
+                };
+                .serve_m{
+                    float: left;
+                    height: 142px;
+                    width: 410px;
+                    p:nth-of-type(1){
+                        height: 38px;
+                        font-size: 20px;
+                        color:#000;
+                        line-height: 38px;
+                        margin-top: 22px;
+                        font-weight: bold;
+                        
+
+                    };
+                    p:nth-of-type(2){
+                        color:#ccc;
+                        font-size: 12px;
+                        font-weight: bold;
+                        
+
+                    };
+                    p:nth-of-type(2){
+                        color:#ccc;
+                        font-size: 12px;
+                        height: 24px;
+                        line-height: 24px;
+                        span{
+                            color:#FF6700;
+                            font-size: 14px;
+                            
+                        }
+                    }
+
+
+                };
+                .serve_r{
+                    float: left;
+                    height: 54px;
+                    width: 52px;
+                    padding-top:80px;
+                    span{
+                        color:#000;
+                    }
+
+
+                };
+                }
+
+            };
+        };
+        .totalnum{
+            width: 554px;
+            height: 170px;
+            background:#F9F9FA;
+            border: 1px solid #ccc;
+            padding:31px 27px 0 27px;
+            // box-sizing:border-box;
+            margin-bottom: 10px;
+            .totalnum_header{
+                height: 26px;
+                margin-bottom: 2px;
+                p{
+                    display:inline-block;
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 14px;
+                    color:#000;
+
+                };
+                p:nth-of-type(1){
+                    float: left;
+                    width: 276px; 
+
+
+                    
+
+                };
+                p:nth-of-type(2){
+                    float: right;
+                    width: 104px;
+                    color:#aaa;
+                    span:nth-of-type(1){
+                        color:#aaa;
+                    }
+                    span:nth-of-type(2)>del{
+                        color:#aaa;
+                    };
+                    
+                    
+                    
+                };
+
+            };
+
+            .totalnum_bottom{
+                font-size: 30px;
+                font-weight: bold;
+                color:#FF6700;
+                font-size: 28px;
+                font-weight: bold;
+                
+                span{
+                    color:#FF6700;
+                    display:inline-block;
+                    font-size: 28px !important;
+                    font-weight: bold;
+                    
+                }
+
+
+                
+            };
+        };
+        .listBuy{
+            width: 607px;
+            height: 55px;
+            margin-bottom: 25px;
+            #addtocart{
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                color:#fff;
+                font-weight: bold;
+                font-size: 20px;
+                background:#FF6700;
+                width: 300px;
+                margin-right: 14px;
+                float: left;
+                background:#FF6700;
+                
+
+            };
+            .phonelove{
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                color:#fff;
+                font-weight: bold;
+                font-size: 20px;
+                width: 142px;
+                margin-right: 14px;
+                float: left;
+                background-color:#B0B0B0;
+                position:relative;
+                i{
+                    display:block;
+                    position:absolute;
+                    width: 25px;
+                    height:25px;
+                    left:25px;
+                    top:15px;
+                    background: url(../img/xiaomi_sprite_sheet.png) -320px -90px;
+                }
+                
+
+            };
+        }
+
+    };
+    .totalnum_output{
+        // height:24px;
+        width: 100%;
+
+        .output_serve{
+            height:30px !important;
+            line-height: 30px;
+            margin-bottom: 2px;
+            width: 100%;
+            span{
+                display:block;
+                height: 20px;
+                color:#000 !important;
+                min-width:30px;
+                font-weight: bold;
+            };
+            .outputfl{
+                float:left;
+                margin-right: 400px;
+                font-weight: bold;
+                
+                
+
+            };
+            .outputfr{
+                float:right;
+                font-weight: bold;
+                
+                
+
+            };
+        };
+
+    };
+// 弹窗
+.my_model{
+    display:none;
+    .dialog-thin {
+        display:block;
+        background:#fff;
+        width: 330px;
+        position:fixed;
+        z-index: 15;
+        span.closeModel {
+            display: block;
+            background: url(../images/login_dialog_icons.16768cf0.png) no-repeat -176px -11px;
+            width: 15px;
+            height: 15px;
+        }    
+    }
+    .dialog-wrapper {
+            border: 5px solid #b2b2b2;
+            width: 624px;
+            //position: absolute;
+        span.closeModel {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+         h4 {
+            border-radius: 0;
+            background: 0 0;
+            border-bottom: 1px solid #E5E5E5;
+            color: #333;
+            font: 14px/40px "宋体";
+            padding: 0 20px;
+            text-align: left;
+        }
+        .diginfo .submit {
+            border-top: 0;
+            padding: 24px 0;
+            text-align: center;
+            a {
+                border-radius: 4px;
+            }
+            .i_btn {
+                float: none;
+                display: inline-block;
+                width: auto;
+                margin-right: 15px;
+                font-size: 14px;
+                border: 0;
+                a {
+                    padding: 1px 20px;
+                    display: inline-block;
+                    border: 0;
+                    margin: 0 -1px;
+                    float: left;
+                    color: #fff;
+                    height: 32px;
+                    line-height: 32px;
+                    position: relative;
+                }
+            }
+            .i_btn4 a {
+                border: 1px solid #d62a2a;
+            }
+            .i_btn4 a, .i_btn4 a:hover {
+                background: #e02f2f;
+                border-color: #d62a2a;
+            }
+            .dialog-sure a {
+                border: 1px solid #ccc;
+            }
+            .dialog-sure a, .dialog-sure a:hover {
+                background: #ebebeb;
+                border-color: #ccc;
+                color: #333;
+            }
+        }
+    }
+    .cartdialog {
+        width: 430px;
+        .notepad {
+            padding: 30px 84px 10px;
+            font: 14px/24px "微软雅黑";
+        }
+    }
+    a {
+        color: #333;
+    }
+}

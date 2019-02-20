@@ -1,0 +1,232 @@
+#xiaomi_goodslist,#xiaomi_detail_page,#xiaomi_jump_cart,#xiaomi_shopping_cart{
+    min-width:1226px;
+    #nav{
+        .all_list{
+           h3{
+                position:relative;
+                font-size: 18px;
+                color:#000;
+                &:hover{
+                    color:#FF6B00;
+
+                };
+                #xiaomi_inventory{
+                    position:absolute;
+                    top: 100px;
+                    //right:-60px;
+                    left:-70px;
+                    display:none;
+                    background:#fff;
+                    border:1px solid #FF6B00;
+                    
+                    .xiaomi_inventory{
+                        border:1px solid #FF6B00;
+                    };
+
+                };
+                #xiaomi_inventory>li>a{
+                    color:#FF6B00;
+                    &:hover{
+                        color:#fff;
+                    }
+                };
+            };
+        };        
+    };
+};
+#slideshow{
+    #swiper-container{
+        height: 620px;
+        width: 100%;
+        .swiper-slide{
+            height: 620px;
+            text-align: center;
+            position:relative;
+            
+            img{
+                width: 2560px;
+                height: 620px;
+                position:absolute;
+                left: -50% ;
+                top: 0px;
+
+                
+            }
+        };
+        .swiper-pagination{
+            margin-left: 600px;
+        }
+        
+    };
+};
+#phone_list{
+
+    .container{
+        h1{
+            font-size: 26px;
+            height: 58px;
+            line-height: 58px;
+            color:#000;
+            font-weight: bold;
+            
+        };
+        ul{
+            width: 100%;
+            li{
+                float: left;
+                width: 604px;
+                margin-bottom: 15px;
+                transition:all 0.5s linear;
+                &:hover{
+                    transform:translateY(-5px);
+                    box-shadow:-8px 15px 30px -8px #DBDBEA,5px -1px 5px -2px #DBDBEA,8px 15px 30px -8px #DBDBEA,-5px -1px 5px -2px #DBDBEA;
+
+                };
+                
+                a{
+                    display:block;
+
+                    height: 488px;
+                    img{
+                        display:block;
+                        width: 604px;
+                        height: 354px;
+                    };
+                    .list_information{
+                        height: 68px;
+                        padding:32px 47px;
+                        // box-sizing:border-box;
+                        p:nth-of-type(1){
+                            float:left;
+                            color:#000;
+                            span{
+                                display:block;
+                            };
+                            span:nth-of-type(1){
+                                height:30px;
+                                line-height: 30px;
+                                font-size: 30px;
+                                font-weight: bold
+                                
+
+                        
+                            };
+                            span:nth-of-type(2){
+                                font-size: 14px;
+
+                            };
+
+
+                        };
+                        p:nth-of-type(2){
+                            float:right;
+                            color:#000;
+                            span{
+                                display:inline-block;
+                                height: 34px;
+                                margin-top: 30px;
+                            };
+                            span:nth-of-type(1){
+                                height:30px;
+                                line-height: 30px;
+                                font-size: 30px;
+                                font-weight: bold;
+                                color:#FF6B00;
+                            };
+                            span:nth-of-type(2){
+                                font-size: 14px;
+                            }
+
+                        };
+                    }
+                }
+                
+            };
+            .firstlicss{
+                width: 1226px;
+                a{
+                    height: 434px;
+                    display:block;
+                    
+                    img{
+                        height: 434px;
+                        width: 856px;
+                        float: left;
+                    };
+                    .firstli{
+                        float: right;
+                        width: 370px;
+                        height: 434px;
+                        box-sizing:border-box;
+                        padding:80px 80px 66px 55px;
+                        p{
+                            margin-top: 10px;
+                        }
+                        p:nth-of-type(1){
+                            height:36px;
+                            line-height: 36px;
+                            color:#000;
+                            font-size: 30px;
+                            font-weight: bold;
+                            
+
+                        };
+                        p:nth-of-type(2){
+                            height:20px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color:#aaa;
+                            
+                        };
+                        p:nth-of-type(3){
+                            margin-bottom: 106px;
+                            span{
+                                display:inline-block;
+                                margin-left: 10px;
+                            }
+                            span:nth-of-type(1){
+                                font-size: 30px;
+                                font-weight: bold;
+                                color:#FF6B00;
+                                
+
+                            };
+                            span:nth-of-type(2){
+                                font-size: 14px;
+                                color:#000;
+
+
+                            };
+                            
+                        };
+                        span{
+                            color:#000;
+                        }
+                        
+
+                    };
+                }
+             };
+            
+
+            
+            
+        };
+        .mr1{
+            li:nth-child(2n){
+                margin-right: 12px;
+            };
+
+        };
+        .mr2{
+            li:nth-child(2n+1){
+                margin-right: 12px;
+            };
+
+        };
+    }
+};
+
+
+
+

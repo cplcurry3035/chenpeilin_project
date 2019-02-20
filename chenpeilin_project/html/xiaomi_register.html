@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>小米账号-注册</title>
+    <link rel="icon" href="../img/xiaomi.ico"  type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_register.css" />
+    <script src='../js/common.js'></script>
+    <script src='../lib/jQuery/jquery-3.2.1.min.js'></script>    
+    <script src='../js/xiaomi_register.js'></script>
+</head>
+<body>
+    <div id="xiaomi_register_page">
+    <!--注册头部 -->
+        <div id="register_header">
+            <div class="container">
+                <div id="xiaomi_logo">
+                    <i></i>
+                </div>
+                <h1>注册小米账号</h1>
+                <div id="xiaomi_register">
+                    <span>手机注册</span>
+                    <br />
+                    <i class='register_sign'></i>
+                    <input type="text" placeholder='请输入手机号'id='register_tel'/><div class="judge_dv"><i></i><span class='register_judge'></span></div>
+                    <br />
+                    <span>设置密码</span>
+                    <br />
+                    <i class='register_sign'></i>
+                    <input type="password" placeholder='请输入6位以上的密码'id='register_psw'/><div class="judge_dv"><i></i><span class='register_judge'></span></div>
+                    <br />
+
+                    <!-- 密码强度 -->
+                    <div class="psw_progess">              
+                        <span id="psw_inner_progess">
+                            
+                        </span>
+                        <span class='psw_describe'></span>
+                    </div>
+                    <!-- 密码强度 -->
+
+                    <i class='register_sign register_only'></i>
+                    <span>确认密码</span>
+                    <br />
+                    <input type="password" placeholder='请再次输入密码'id='register_repsw'/><div class="judge_dv"><i></i><span class='register_judge'></span>
+                    </div>
+                    <br />
+                    <span>昵称</span>
+                    <br />
+                    <input type="text" id='register_uname'/><div class="judge_dv"><i></i><span class='register_judge'></span>
+                    </div>
+                    <br />
+                    <span >验证码</span>
+                    <br />
+                    <div class="verification_code">
+                        <input type="text" class='register_code'/>
+                        <span class="register_random_code"></span>
+                        <a  href='javascript:;' class='change_verification_code'>看不清?换一张</a>
+                    </div>
+                    <div id="register_output"></div>              
+                    <div id="register_btn">
+                        立即注册
+                    </div>
+                    <p>
+                        <i class='register_check'></i>
+                        注册帐号即表示您同意并愿意遵守小米
+                        <span>用户协议</span>
+                        和
+                        <span>隐私政策</span>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    <!-- 底部 -->
+        <div id="register_footer">
+            <div class="container">
+                <p>
+                <a href="javascript:;">简体</a>|
+                <a href="javascript:;">繁体</a>|
+                <a href="javascript:;">English</a>|
+                <a href="javascript:;">常见问题</a>|
+                <a href="javascript:;">隐私政策</a>           
+                </p>
+                <p>
+                小米公司版权所有-京ICP备10046444-<i></i>京公网安备11010802020134号-京ICP证110507号
+                </p>                
+            </div>           
+        </div>
+
+    </div>
+    
+</body>
+</html>

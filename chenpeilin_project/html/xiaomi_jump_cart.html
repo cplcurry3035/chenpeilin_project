@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 陈培林项目:成功加入购物车 -->
+    <meta charset="UTF-8" />
+    <title>成功加入购物车- 小米商城</title>
+    <!-- 小米logo小图标 -->
+    <link rel="icon" href="../img/xiaomi.ico"  type="image/x-icon"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_listbase.css" />
+    <!-- js -->
+    
+    <script src='../lib/jQuery/jquery-3.2.1.min.js'></script>
+    <script src='../js/specialEffects.js'></script> 
+    <script src='../js/common.js'></script>
+    <script src='../js/xiaomi_jump_cart.js'></script>  
+      
+
+
+    
+</head>
+<body>
+    <div id="xiaomi_jump_cart">
+        <!-- 头部(公共部分) -->
+        <div id="header">
+            <div class="container clearfix">
+                <ul class='header_l '>
+                    <li >
+                    <a href="javascript:;">
+                    <span>小米商城</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>MIUI</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>loT</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>云服务</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>金融</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>有品</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>小爱开放平台</span></a></li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>政策服务</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>资质证照</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>协议规则</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>下载app</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span>Select Regio</span>
+                    </a>
+                    </li>
+                </ul>
+                <ul class='header_r '>
+                    <li>
+                    <a href="javascript:;" target="_blank" id='astatus'>
+                        <span id='unamestatus' style='padding:0 20px;'>
+                        登录
+                        </span>
+                        <i></i>
+                        <ul>
+                            <li>个人中心</li>
+                            <li>评价晒单</li>
+                            <li>我的喜欢</li>
+                            <li>小米账户</li>
+                            <li id='login_out'>退出登录</li>
+                        </ul> 
+                    </a>
+                    </li>
+                    <li>
+                    <a href="html/xiaomi_register.html" target="_blank">
+                    <span class='statusone' style='padding:0 20px;'>注册</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">
+                    <span class='statustwo'>消息通知</span>
+                    </a>
+                    </li>
+                    <li class='cart'>
+                        <a href="javascript:;" id='shopping_cart'>
+                            <i></i>
+                            <span id='cartstatus'>
+                                购物车(0)
+                            </span>
+                            <div class='shopping_cart'>
+                                购物车中还没有商品,赶紧选购吧！
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航条(公共部分,小改)-->
+        <div id="nav">
+            <div class="container">
+                <h1></h1>
+                <!-- 商品列表 -->
+                <div class='all_list'>
+                    <h3 id='all_goods_list'>
+                        全部商品列表
+                        <ul id='xiaomi_inventory'>
+                            <li><a href="javascript:;">手机 电话卡<i></i></a>
+                                <div class='xiaomi_inventory'>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/100.png" alt="" /><span>小米MIX3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/118.png" alt="" /><span>小米移动 电话卡</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/119.png" alt="" /><span>手机上门维修</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/120.png" alt="" /><span>云服务空间月卡</span></a></li>
+               
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">电视 盒子<i></i></a>
+                                <div class='xiaomi_inventory'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/202.png" alt="" /><span>米家激光投影电视</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/118.png" alt="" /><span>小米移动 电话卡</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/119.png" alt="" /><span>手机上门维修</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/120.png" alt="" /><span>云服务空间月卡</span></a></li>
+               
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="" >笔记本 平板<i></i></a>
+                                <div class='xiaomi_inventory' style='width:496px;'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/203.png" alt="" /><span>小米笔记本15.6''</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">家电 插线板<i></i></a>
+                                <div class='xiaomi_inventory'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/204.png" alt="" /><span>米家互联网一体烘干机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/118.png" alt="" /><span>小米移动 电话卡</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/119.png" alt="" /><span>手机上门维修</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/120.png" alt="" /><span>云服务空间月卡</span></a></li>
+               
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="" >出行 穿戴<i></i></a>
+                                <div class='xiaomi_inventory' style='width:496px;'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/205.png" alt="" /><span>手环手表</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">智能 路由器<i></i></a>
+                                <div class='xiaomi_inventory'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/206.png" alt="" /><span>打印机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/118.png" alt="" /><span>小米移动 电话卡</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/119.png" alt="" /><span>手机上门维修</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/120.png" alt="" /><span>云服务空间月卡</span></a></li>
+               
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">电源 配件<i></i></a>
+                                <div class='xiaomi_inventory' style='width:744px;'>
+                                     <ul class="list_phone"  >
+                                        <li><a href="javascript:;"><img src="../img/207.png" alt="" /><span>移动电源</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">健康 儿童<i></i></a>
+                                <div class='xiaomi_inventory'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/208.png" alt="" /><span>洗手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/118.png" alt="" /><span>小米移动 电话卡</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/119.png" alt="" /><span>手机上门维修</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/120.png" alt="" /><span>云服务空间月卡</span></a></li>
+               
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">耳机 音箱<i></i></a>
+                                <div class='xiaomi_inventory' style='width:496px;'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/209.png" alt="" /><span>小米小爱音箱mini</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">生活 箱包<i></i></a>
+                                <div class='xiaomi_inventory'>
+                                     <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/210.png" alt="" /><span>双肩包</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/101.png" alt="" /><span>小米8 青春版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/102.png" alt="" /><span>小米 8屏幕指纹版</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/103.png" alt="" /><span>小米8</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/104.png" alt="" /><span>小米8 SE</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/105.png" alt="" /><span>小米MIX 2S</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/106.png" alt="" /><span>小米MAX 3</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/107.png" alt="" /><span>小米6X</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/108.png" alt="" /><span>黑鲨游戏手机 Helo</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/121.png" alt="" /><span>黑鲨游戏手机 </span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/109.png" alt="" /><span>红花Note7</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/110.png" alt="" /><span>红米6 Pro</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/111.png" alt="" /><span>红米 6</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/112.png" alt="" /><span>红米 6A</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/113.png" alt="" /><span>红米 Note5</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/115.png" alt="" /><span>移动4G+专区</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/116.png" alt="" /><span>对比手机</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/117.png" alt="" /><span>米粉卡 日租卡</span></a></li>                   
+                                    </ul>
+                                    <ul class="list_phone">
+                                        <li><a href="javascript:;"><img src="../img/118.png" alt="" /><span>小米移动 电话卡</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/119.png" alt="" /><span>手机上门维修</span></a></li>
+                                        <li><a href="javascript:;"><img src="../img/120.png" alt="" /><span>云服务空间月卡</span></a></li>
+               
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </h3>
+                    
+                </div>  
+                <!-- 商品列表 -->        
+                <ul class='nav_list'>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>小米手机</a>              
+                    </li>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>红米</a>
+                    </li>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>电视</a>
+                    </li>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>笔记本</a>
+                    </li>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>家电</a>
+                    </li>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>新品</a>
+                    </li>
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>路由器</a>
+                    </li> 
+                    <li class='zidxshow'>
+                    <a href="" class='ashow'>智能硬件</a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">服务</a>
+                    </li>
+                    <li>
+                    <a href="javascript:;">社区</a>
+                    </li>
+                </ul>              
+                <div class="search_engine">
+                    <input type="text" class='search_box'/>
+                    <span>
+                        <i></i>
+                    </span>                
+                </div>
+            </div>
+            <div class='products_box' style='z-index:30'>
+                <ul class='products_list '>
+                         
+                            <li class='parent_li' id="zidx">
+                                 <div class='li_box '>
+                                     <div class='li_tab'>
+                                        <h1>新品1</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX1</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>
+                            <li class='parent_li'>
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品2</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/90.png" alt="" />
+                                        </a>
+                                        <p>小米MIX2</p>
+                                        <p>2299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li> 
+                            <li class='parent_li'>
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品3</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/92.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>
+                            <li class='parent_li'>
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品4</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/94.png" alt="" />
+                                        </a>
+                                        <p>小米MIX4</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>
+                            <li class='parent_li'>
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品5</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/95.png" alt="" />
+                                        </a>
+                                        <p>小米MIX5</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>
+                            <li class='parent_li' >
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品6</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/95.png" alt="" />
+                                        </a>
+                                        <p>小米MIX6</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>
+                            <li class='parent_li'>
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品7</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/96.png" alt="" />
+                                        </a>
+                                        <p>小米MIX7</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>
+                            <li class='parent_li'>
+                                 <div class='li_box'>
+                                     <div class='li_tab'>
+                                        <h1>新品8</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/97.png" alt="" />
+                                        </a>
+                                        <p>小米MIX8</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/80.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/82.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/83.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                     <div class='li_tab'>
+                                        <h1>新品</h1>
+                                        <a href="javascript:;">
+                                            <img src="../img/84.png" alt="" />
+                                        </a>
+                                        <p>小米MIX3</p>
+                                        <p>3299起</p>
+                                     </div>
+                                 </div>
+                            </li>       
+                </ul>
+            </div>        
+        </div>
+        <!-- 成功加入购物车 -->
+        <div id="success_add_cart">
+            <div class="container">
+                <i></i>          
+                <div class="success_add_cart_l">
+                    <p>已成功加入购物车!</p>
+                    <p id='success_describe'></p>
+                </div>
+                <div class="success_add_cart_r clearfix">
+                    <span>返回上一级</span>
+                    <span id='cart_pay'>去购物车结算</span>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 其他商品 -->
+        <div class='otherlist'>
+            <img src="../img/otherlist.png" alt="" />
+        </div>
+        <!-- 底部(公共部分) -->
+        <div id="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <ul class="clearfix">
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        预约维修服务
+                        </a>
+                        </li>
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        7天无理由退货
+                        </a>
+                        </li>
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        15天免费换货
+                        </a>
+                        </li>
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        满150元包邮
+                        </a>
+                        </li>
+                        <li >
+                        <a href="javascript:;" style='border-right:0 none;'>
+                        <i></i>
+                        520余家售后网点
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_middle_top">
+                    <div class="footer_middle_top_left">
+                        <dl>
+                            <dt>帮助中心1</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心2</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心3</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心4</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心5</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心6</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        
+                    </div>
+                    <div class="footer_middle_top_right">
+                        <p>400-100-5678</p>
+                        <p>周一至周日 8:00-18:00</p>
+                        <p>(仅市话收费)</p>
+                        <p>联系客服</p>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer_middle_bottom">
+                    <i></i>
+                    <p>
+                       <span> 小米商城 | MIUI | 米家 | 米聊 | 多看 | 游戏 | 路由器 | 米粉卡 | 政企服务 | 小米天猫店 | 隐私政策 | 商城用户协议 | 账号协议 | 问题反馈 | 廉正举报 | 诚信合规 | Select Regionbr </span>  <br /> 
+
+                        <span>©</span> mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号 <br />
+                        （京）网械平台备字（2018）第00005号 b    互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械公告  
+                        增值电信业务许可证 <br />     网络食品经营备案（京）【2018】WLSPJYBAHF-12   食品经营许可证 <br />   
+                        违法和不良信息举报电话：185-0130-1238 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                    <img src="../img/all.png" alt="" style='margin-left:124px;'/>
+                    
+                </div>
+                <div class="footer_bottom">
+                    探索黑科技，小米为发烧而生
+                    
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var address=decodeURI(location.search);;
+        address = address.slice(1).split('=')[1];
+        console.log(address);
+        $.ajax({
+            url: '../api/xiaomi_shopping_cart.php',
+            type: 'POST',
+            data:{
+                a:'listrender',
+                addr:address
+            },
+            async:true,
+            success:function(str){
+                $res=$.parseJSON(str);
+                $information=$.parseJSON($res[0].version_information);
+                $serve=$.parseJSON($res[0].services);
+                console.log($res, $information,$serve);
+                if($serve[0].checked=='true'||$serve[1].checked=='true'||$serve[2].checked=='true'){
+                    $('#success_describe').html($res[0].listname+ $information[2]+ $information[0]+'内存 '+$res[0].color+$information[1]+'等多件');
+                    
+                }
+                else{
+                     $('#success_describe').html($res[0].listname+ $information[2]+ $information[0]+'内存 '+$res[0].color+$information[1]);
+
+                };
+                $('#cart_pay').click(function(){
+                    location.href='xiaomi_shopping_cart.html';
+                })
+
+                
+
+            },
+            error:function(err){
+                console.log(err);
+
+            }
+
+        });
+
+
+    </script>
+</body>
+</html>

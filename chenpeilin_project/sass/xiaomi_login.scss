@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+};
+a{
+    text-decoration: none;
+    color:black;
+};
+input{
+    outline:none;
+    border:0 none;
+};
+ul li{
+    list-style: none;
+    
+};
+.public{
+    height: 418px;   
+};
+#login_page{
+    min-width:1130px;
+
+};
+.logininput{
+    width: 348px;
+    height: 50px;
+    box-sizing:border-box;
+    line-height: 50px;
+};
+.container{
+    margin:0 auto;
+    width: 1130px;
+};
+#login_page{
+    width: 100%;
+    #login_header{
+        width: 100%;
+        .container{
+            height: 97px;
+            a{
+                display:block;
+                height: 97px;
+                width: 210px;
+                background:url('../img/xiaomistore.png') no-repeat;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 97px;
+                text-align: center;
+                color:black;
+                text-indent: -5000px;
+            }
+        }
+    };
+    #login_in{
+        
+        margin-bottom:108px ;
+        position:relative;
+        .login_redmi{
+            height: 537px;
+            display:block;
+            background:url('https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/93669e3fa2baa668227d699f69788fd6.jpg'
+            ) center;
+            background-size:auto 100%;
+        };
+        .login_in{
+            width: 348px;
+            height: 507px;
+            position:absolute;
+            padding:0 30px;
+            right: 120px;
+            bottom: 0px;
+            background:#fff;
+            ul{
+                overflow:hidden;
+                li{
+                
+                float: left;
+                height: 29px;
+                font-size: 24px;
+                line-height: 29px;
+                color:black;
+                padding:0 35px;
+                margin:30px 0;
+                    &:hover{
+                        color:#FF4400;
+                    }               
+                };
+                li:nth-of-type(1){
+                    border-right:2px solid #E0E0E0;
+                }
+            };
+            .login_in_login{
+                @extend .public;
+                position:relative;
+                #login_username{
+                    @extend .logininput;
+                    padding-left: 14px;
+                    margin-top: 15px;
+                    border: 1px solid #E0E0E0;
+                };
+                #login_psw{
+                    @extend .logininput;
+                    padding-left: 14px;
+                    margin-top: 15px;
+                    border: 1px solid #E0E0E0;
+                };
+                #login_output{
+                    font-size: 12px;
+                    color:#EF5B00;
+                    // margin-top: 15px;
+                    display:none;
+                    i{
+                        display:inline-block;
+                        width: 15px;
+                        height: 15px;
+                        background:url('../img/xiaomi_sprite_sheet.png') no-repeat -270px 0;
+                        vertical-align: bottom;
+                    }
+                    span{
+                        vertical-align: bottom;
+
+                    }
+                }
+                #login_btn{
+                    @extend .logininput;
+                    background:#EF5B00;
+                    margin-top: 15px;
+                    text-align: center;
+                    color:#fff;
+                    font-size: 14px;
+                };
+                .login_in_avoid{
+                    position:relative;
+                    height: 40px;
+                    line-height: 40px;
+                    color:#EF5B00;
+                    font-size: 14px;
+                    // margin-bottom: 120px;
+                    p{
+                        position:absolute;
+                        color:#999999;
+                        right: 5px;
+                        top: 0px;
+                        a{
+                            
+                            color:#99A5C2;
+                            &:hover{
+                            color:#EF5B00;
+                             }
+                        }
+                        // span:hover{
+                        //     color:#EF5B00;
+                        // }
+
+                    };
+                    input{                       
+                        line-height: 40px;
+                        vertical-align:middle;                     
+                    };
+                    span{
+                        vertical-align:middle;
+                        // display:inline-block;
+                        // height: 16px
+
+                    };
+                };
+                .login_in_way{
+                    height: 64px;
+                    position:absolute;
+                    width: 100%;
+                    bottom: 0;
+                    border-top:1px solid #999999;
+                    span{
+                        position:absolute;
+                        left: 50%;
+                        top: 0px;
+                        transform:translate(-50%,-50%);
+                        color:#999;
+                        display:block;
+                        background:#fff;
+                    }
+                    i{
+                        display:block;
+                        position:absolute;
+                        width: 34px;
+                        height: 32px;
+                        top: 50%;
+                        transform:translateY(-50%);
+                    }
+                };
+                .login_verification_code{
+                    height: 80px;
+                    line-height: 80px;
+                    display:none;
+                    
+                    #login_verification_code{
+                        width: 170px;
+                        height: 50px;
+                        line-height: 50px;
+                        padding-left: 18px;
+                        vertical-align: middle;
+                        outline:none;
+                        border: 1px solid #E0E0E0;
+                    };
+                    .login_in_random_code{
+                        height: 50px;
+                        margin-left: 14px;
+                        width: 136px;
+                        display:inline-block;
+                        vertical-align: middle;
+                        border: 1px solid #000;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 50px;
+                        text-align: center;
+                        
+                        
+                    }
+                }
+            };
+            .login_in_code{
+                 @extend .public;
+                 display:none;
+                 #xiaomi_code{
+                    width: 180px;
+                    height: 180px;
+                    margin:104px auto 18px;
+                    background:url('../img/xiaomicode.png') no-repeat;
+                 }; 
+                 p{
+                text-align: center;
+                font-size: 14px;
+                span{
+                    color:#FF4400;
+                }               
+            }              
+            };
+                       
+        }       
+    };
+    #login_footer{
+        .container{
+            height: 90px;
+            p{
+                text-align: center;
+                line-height: 32px;
+                color:#757575;
+                font-size:14px;            
+            };
+            p:nth-of-type(1) a{
+                display:inline-block;
+                height: 15px;
+                padding:0 10px;
+                color:#757575;
+                font-size:14px;
+                &:hover{
+                    color:black;
+                }
+            }
+            i{
+                display:inline-block;
+                width: 18px;
+                height: 20px;
+                line-height: 32px;
+                background:url('../img/xiaomi_sprite_sheet.png') -240px 0;       
+            }
+
+        }
+        
+    }
+
+};

@@ -1,0 +1,1543 @@
+#xiaomi{
+    position:relative;
+    #sideNav{
+        position:fixed;
+        width: 26px;
+        // right:35px;
+        left: 1295px;
+        bottom: 150px;
+        background-color:#fff; 
+        z-index:100;
+        li{
+            width: 20px;
+            height: 20px;
+            padding:5px 3px;
+            border: 1px solid #ccc;
+           
+            color:#000;
+            border-bottom: 0 none;
+        };
+        li:nth-of-type(1){
+            background:url('../img/xiaomi_r1.png') no-repeat 3px  4px ;
+
+        };
+        li:nth-of-type(2){
+            background:url('../img/xiaomi_r2.png') no-repeat 3px  4px ;
+        };
+        li:nth-of-type(3){
+           background:url('../img/xiaomi_r3.png') no-repeat 3px  4px ;
+        };
+        li:nth-of-type(4){
+            border-bottom: 1px solid #ccc;
+            background:url('../img/xiaomi_r4.png') no-repeat 3px  4px ;
+        };
+    };
+    #return_top{
+        width:20px;
+        height:20px;
+        border:1px solid #ccc;
+        position:fixed;
+        left: 1295px;
+        bottom: 100px;
+        padding:5px 3px;
+        background:url('../img/xiaomi_r5.png') no-repeat 3px  4px ;
+        background-color:#fff;
+        display:none;
+
+    };
+    #suction_top_menu{
+        //position:fixed;
+        width: 100%;
+        border-bottom: 2px solid #ccc;
+        display:none;
+        z-index:60;
+        top:0;
+        background:#FF6700;
+        .container{
+            height:70px;
+            h1{
+                background:url('../img/xiaomi_sprite_sheet.png') no-repeat -300px 0;
+                width: 48px;
+                height: 48px;
+                float: left;
+                margin-top: 12px;
+                margin-left: 450px;
+                margin-right: 50px;
+
+            }
+            .search_engine{
+                height:70px;
+                float: left;
+                input,span{
+                    height: 48px;
+                    display:block;
+                    float:left;
+                    margin-top: 12px;
+                    border:1px solid #ccc;
+                }
+                input{
+
+                    width: 234px;
+                    padding-left: 10px;
+                    &:hover{
+                        border-color:#aaa;
+                    }
+                };
+                span{
+                    width: 50px;
+                    height: 50px;
+                    border-left: 0 none;
+                    box-sizing:border-box;   
+                    background:#fff;           
+                    padding:15px 14px;
+                    i{
+                        display:block;
+                        width:20px;
+                        height: 20px;
+                        background:url('../img/search.png') no-repeat ;
+                    };
+                    &:hover{
+                        background:#FF6700;
+
+                    }
+
+                };
+            };
+        };  
+    };
+    .suckfixed{
+        position:fixed;
+        left: 0;
+        top: 0;
+    };
+
+
+};
+
+#slideshow{
+    
+    .container{
+        height: 462px;
+        background:orange;
+        position:relative;
+        // z-index:50;
+    };
+    // 轮播图
+    .swiper-container {
+        width: 1226px;
+        height: 462px;
+        background: #ccc;
+    };
+    .swiper-wrapper{
+        img{
+            width: 1226px;
+            height: 462px;
+        }
+    };
+    .swiper-slide {
+        font-size: 60px;
+        text-align: center;
+        line-height: 300px;
+    };
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        background: #666;
+        font-size: 12px;
+    };
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        background: orangered;
+    };
+};
+// 部分商品
+.part_list{
+    margin-top: 14px;
+    .container{
+        .part_item{
+            display:block;
+            float: left;
+            width: 316px;           
+            margin-left: 14px;
+            transition:all 0.2s linear;  
+            a{
+                display:block;
+                height: 170px;
+                img{
+                    width: 316px;
+                    height: 170px;
+                }
+            };
+            &:hover{
+               box-shadow:-5px 18px 25px -5px #DBDBEA,2px -1px 5px -2px #DBDBEA,5px 18px 25px -5px #DBDBEA,-2px -1px 5px -2px #DBDBEA;
+               //实现四边阴影
+                //box-shadow:black 0px 0px 10px
+
+            };
+            
+        };
+        .part_item_span{
+            // width: 218px;
+            width: 218px;
+            height: 154px;
+            padding:9px;
+            display:block;
+            float: left;
+            background:#5F5750;
+            li{ 
+                // padding:0 0 0 3px;
+                margin-right: 3px;
+                margin-left: 3px;
+                
+                border-bottom: 1px solid #ccc;
+                height: 76px;
+                float: left;
+                width: 62px;
+
+                span{
+                     display:block;
+                 };
+                a{
+                    display:inline-block;
+                    float:left;        
+                    height: 62px;
+                    width: 61px;
+                    margin-right: 3px;
+                    text-align: center;
+                    &:hover span{
+                        color:#fff;
+
+                    }
+                    .span_i{
+                        width: 25px;
+                        padding:8px 20px 0;
+                        i{
+                            display:block;
+                            height: 30px;
+                            background:red;
+                        };
+                        .span_ico1{
+                            background:url('../img/xiaomi_sprite_sheet.png') no-repeat -140px -50px;
+                        };
+                        .span_ico2{
+                            background:url('../img/xiaomi_sprite_sheet.png') no-repeat -180px -50px;
+                        };
+                        .span_ico3{
+                            background:url('../img/xiaomi_sprite_sheet.png') no-repeat -220px -50px;
+                        };
+                        .span_ico4{
+                            background:url('../img/xiaomi_sprite_sheet.png') no-repeat -260px -50px;
+                        };
+                        .span_ico5{
+                            background:url('../img/xiaomi_sprite_sheet.png') no-repeat -360px -50px;
+                        };
+                        .span_ico6{
+                            background:url('../img/xiaomi_sprite_sheet.png') no-repeat -400px -50px;
+                        };
+                    }
+                    .span_describe{
+                        height: 20px;
+                        line-height: 20px;
+                        color:#CDCAC8;
+                    }       
+                }
+            };
+            // .li_after:after{
+            //     content:'';
+            //     width: 1px;
+            //     height: 20px;
+            //     background:black;
+            //     float:left;
+            // }
+            p{
+               // content:'';
+                width: 1px;
+                height: 60px;
+                background:#ccc;
+                float:left;
+                display:inline-block;
+                margin:5px 1px 0;
+            };
+            .li_bordernone{
+                border-bottom: 0 none;
+            }
+
+        };
+    };
+};
+// 小米快闪
+#xiaomi_quickly_buy{
+    margin-top: 24px;
+    .container{
+        h1{
+            font-size: 24px;
+            height: 58px;
+            line-height: 58px;
+        };
+        #quickly_buy{
+            width: 233px;
+            height: 300px;
+            border-top: 2px solid red;
+            float:left;
+            background:#F1EDED;
+            margin-bottom: 42px;
+        }
+
+
+    }
+};
+// 黑鲨手机,小米电视,小米音箱,小米特惠,小米取暖器小米蓝夜耳机,小米智能门锁
+.black_shark,.xiaomi_tv,.xiaomi_hd,.xiaomi_special_offer,.xiaomi_electric_heater,.xiaomi_bluetooth_headset,.xiaomi_door_lock{
+    padding-top: 42px;
+    height: 162px;
+    background-color:#F5F5F5;
+    .container{
+        a{
+            height: 120px;
+            display:block;
+            img{
+                width:1226px;
+                height: 120px;
+            };
+        }
+    };
+};
+// 手机
+#xiaomi_phone{
+    background:#F5F5F5;
+    .container{
+        // height: 614px;
+        #phone_describe{
+            h1{
+                font-size: 24px;
+                height: 58px;
+                line-height: 58px;
+                float:left;
+                color:#000;
+                 margin-top: 22px;
+            };
+            .see_all{
+                height: 20px;          
+                float: right;
+                color:#000;
+                margin-top: 41px;
+                span{
+                    height: 20px;
+                    line-height: 20px;
+                    display:block;
+                    font-size: 18px;
+                    float:left;
+                    color:#000;
+                };
+                i{
+                    width:20px;
+                    height: 20px;
+                    display:block;    
+                    border-radius:50%;
+                    margin-left: 8px;
+                    background:url('../img/smallerror.png') no-repeat #B0B0B0 2px 2px; 
+                };
+                &:hover{
+                    cursor: pointer;
+                }
+                &:hover span{
+                    color:#FF6700;
+                };
+                &:hover i{
+                    background-color:#FF6700;         
+                };
+                
+            };
+        };
+        #phone_list{
+            position:relative;
+            // height: 614px;
+            .phone_left{
+                width: 234px;
+                position:absolute;
+                left: 0px;
+                top: 0px;
+                float:left; 
+                a{
+                    height: 614px;
+                    display:block;
+                    img{
+                        height: 614px;
+                    }
+                }       
+                
+            }
+            .phone_right{
+                // height: 614px;
+                width: 992px;
+                float:right;
+                ul{ 
+                    position:relative;
+                    height: 629px;
+                    li{
+                        float:left;
+                        margin-left: 12px;
+                        width: 235px;
+                        height: 300px;
+                        background:#fff;
+                        margin-bottom: 13px;
+                        del{
+                            color:#aaa;
+                        };
+                        h3{
+                            width: 65px;
+                            height: 20px;
+                            color:#fff;
+                            text-align: center;
+                            line-height: 20px;
+                            margin:0 auto;
+                            background:#E53935;
+                        }
+                        a{
+                            display:block;
+                            width: 160px;
+                            height: 160px;
+                            margin:0 auto;
+                            img{
+                                height: 160px;
+                            }
+                        };
+                        p{  
+                            a{
+                                height: 24px;
+                                display:block;
+                                text-align: center;
+                                line-height: 24px;
+                                font-size:14px;                            
+                            }                       
+                        };
+                        p:nth-of-type(1){
+                            a{
+                                color:#000;
+                            }                         
+                        };
+                        p:nth-of-type(2){                          
+                            color:#aaa;
+                            width: 214px;
+                            font-size: 12px;
+                            height: 28px;
+                            line-height: 28px;
+                            text-overflow:ellipsis;
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-align: center;
+                            margin:auto;                         
+                        };
+                        p:nth-of-type(3){
+                            color:#FF6700;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            text-align: center;
+                            font-size: 14px;                            
+                        };
+                    };
+                    // li:nth-of-type(n+4){
+                    //     margin-bottom: 13px;
+                    // }
+                    li:nth-of-type(1){
+                        position:absolute;
+                        left:0;
+                        top: 0;
+                    };
+                    li:nth-of-type(2){
+                        position:absolute;
+                        left:247px;
+                        top: 0;
+                    };
+                    li:nth-of-type(3){
+                        position:absolute;
+                        left:494px;
+                        top: 0;
+                    };
+                    li:nth-of-type(4){
+                        position:absolute;
+                        left:741px;
+                        top: 0;
+                    }
+                    li:nth-of-type(5){
+                        position:absolute;
+                        left:0px;
+                        top: 313px;
+                    }
+                    li:nth-of-type(6){
+                        position:absolute;
+                        left:247px;
+                        top: 313px;
+                    }
+                    li:nth-of-type(7){
+                        position:absolute;
+                        left:494px;
+                        top: 313px;
+                    };
+                    li:nth-of-type(8){
+                        position:absolute;
+                        left:741px;
+                        top: 313px;
+                    }
+                }
+
+
+
+            }
+        }
+        
+
+    }
+};
+// 家电
+#xiaomi_household_appliances,#xiaomi_hd,#xiaomi_special_offer,#xiaomi_electric_heater,#xiaomi_bluetooth_headset{
+    background:#F5F5F5;
+    .container{
+        .active{
+            color:#FF6700 !important;
+            border-bottom: 2px solid #FF6700;
+
+        };
+        .household_appliances_header{
+            h1{
+                height: 58px;
+                line-height: 58px;
+                float:left;
+                font-size: 24px;
+                color:#000;
+            };
+            .header_right{
+                float: right;   
+                span{
+                    display:inline-block;
+                    margin-left: 16px;
+                    font-size: 18px;
+                    height: 26px;
+                    line-height: 26px;
+                    margin-top: 16px;
+                    color:#000;
+                }
+            }
+        };
+        .household_appliances_list{
+            .list_left{
+                float:left;
+                position:relative;
+                ul{
+                    width: 234px;
+                    height: 626px;
+                    li{ 
+                        position:absolute;
+                        height: 300px;
+                        left:0px;
+                        top: 0px;
+                        margin-bottom: 13px;
+                        a{
+                            display:block;
+                            width: 234px;
+                            img{
+                                height: 300px;
+                            }
+                        }
+                    };
+                    li:nth-of-type(2){
+                        top: 313px;
+                    }
+
+                }
+            };
+            .list_right{
+                float:right;
+                position:relative;
+                width: 992px;
+                height: 626px;
+                ul{ 
+                    position:absolute;
+                    left:0px;
+                    top: 0px;
+                    height: 626px;
+                    width: 992px;
+                    display:none;
+                    li{
+                        float:left;
+                        margin-left: 12px;
+                        width: 235px;
+                        height: 300px;
+                        background:#fff;
+                        margin-bottom: 13px;
+                        position:relative;
+                        overflow:hidden;
+                        .xiaomi_shade{
+                            background:#FF6700;
+                            width: 234px;
+                            height: 100px;
+                            position:absolute;
+                            left: 0px;
+                            bottom: -100px;
+                            z-index:50;
+                            box-sizing:border-box;
+                            padding:12px 18px;
+                            p{
+                                height:24px;
+                                line-height: 24px;
+                                text-align: center;
+                                text-overflow:ellipsis;
+                                white-space:nowrap;
+                                overflow:hidden;
+                                color:#fff;
+                                
+                            }
+                            
+    
+                        };
+                        del{
+                            color:#aaa;
+                        };
+                        h3{
+                            width: 65px;
+                            height: 20px;
+                            color:#fff;
+                            text-align: center;
+                            line-height: 20px;
+                            margin:0 auto;
+                            background:#E53935;
+                        }
+                        a{
+                            display:block;
+                            width: 160px;
+                            height: 160px;
+                            margin:0 auto;
+                            img{
+                                height: 160px;
+                            }
+                        };
+                        p{  
+                            a{
+                                height: 24px;
+                                display:block;
+                                text-align: center;
+                                line-height: 24px;
+                                font-size:14px;                            
+                            }                       
+                        };
+                        p:nth-of-type(1){
+                            a{
+                                color:#000;
+                                text-align: center;
+                                text-overflow:ellipsis;
+                                white-space:nowrap;
+                                overflow:hidden;
+                            }                         
+                        };
+                        p:nth-of-type(2){                          
+                            color:#aaa;
+                            width: 214px;
+                            font-size: 12px;
+                            height: 28px;
+                            line-height: 28px;
+                            text-overflow:ellipsis;
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-align: center;
+                            margin:auto;                         
+                        };
+                        p:nth-of-type(3){
+                            color:#FF6700;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            text-align: center;
+                            font-size: 14px;                            
+                        };
+                    };
+                    li:nth-of-type(1){
+                        position:absolute;
+                        left:0;
+                        top: 0;
+                    };
+                    li:nth-of-type(2){
+                        position:absolute;
+                        left:247px;
+                        top: 0;
+                    };
+                    li:nth-of-type(3){
+                        position:absolute;
+                        left:494px;
+                        top: 0;
+                    };
+                    li:nth-of-type(4){
+                        position:absolute;
+                        left:741px;
+                        top: 0;
+                    }
+                    li:nth-of-type(5){
+                        position:absolute;
+                        left:0px;
+                        top: 313px;
+                    }
+                    li:nth-of-type(6){
+                        position:absolute;
+                        left:247px;
+                        top: 313px;
+                    }
+                    li:nth-of-type(7){
+                        position:absolute;
+                        left:494px;
+                        top: 313px;
+                    };
+                    li:nth-of-type(8){
+                        position:absolute;
+                        left:741px;
+                        top: 313px;
+                        background:none;
+                        overflow:visible;
+                        .last_ul{
+                            width: 234px;
+                            height: 300px;
+                            position:absolute;
+                            .last_ul_li{
+                                margin-bottom: 13px;
+                                height: 144px;
+                                position:absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index:10;
+                                margin-left: 0 ;
+                                background:#fff;
+                                padding:34px 18px 31px 31px;
+                                box-sizing:border-box;
+                                div{
+                                    display:block;
+                                    float: left;
+                                    width: 80px;
+                                    p{
+                                        margin-top: 10px;
+                                        height: 24px;
+                                        line-height: 24px;
+                                        width: 80px;
+                                        a{
+                                            display:block;
+                                            height: 24px;
+                                            text-align: center;
+                                            text-overflow:ellipsis;
+                                            white-space:nowrap;
+                                            overflow:hidden;
+                                        }
+                                        
+
+
+                                        
+                                    };
+                                    p:nth-of-type(2){
+                                        color:#FF6700;
+                                        a{
+                                           color:#FF6700; 
+                                        }
+                                    }
+
+                                };
+                                a{
+                                    display:block;
+                                    float: left
+                                    ;
+                                    width: 80px;
+                                    height: 80px;
+                                    img{
+                                        width: 80px;
+                                        height: 80px;
+                                    }
+                                }
+                            };
+                            .last_ul_li:nth-of-type(2){
+                                left:0px;
+                                top: 157px;
+
+                            };
+                        }
+                    }
+                };
+                ul:nth-of-type(1){
+                    display:block;
+                }
+            };
+
+
+        };
+        
+
+
+    }
+};
+// 热评产品
+#buzz_products,#xiaomi_videos,#contents_carousel{
+    background:#F5F5F5;
+    .container{
+        h1{
+            height: 58px;
+            font-size: 24px;
+            color:#000;
+            line-height: 58px;
+        };
+        .buzz_products{
+            height: 414px;
+            // width: 1226px;
+            // border: 1px solid #000;
+            position:relative;
+            .special_effects{
+                height: 414px;
+                width: 294px;
+                position:absolute;
+                top: 0px;
+                left: 0px;
+                margin-right: 12px;
+                background:#fff;
+                a{
+                    display:block;
+                    width: 294px;
+                    img{
+                        height: 220px;
+                        width: 294px;
+    
+                    }
+                };
+                p{
+                    width: 238px;
+                    min-height:30px;
+                    line-height: 30px;
+                    margin:auto;
+                    font-size: 14px;
+
+                };
+                p:nth-of-type(1){
+                    margin-top: 22px;
+                    a{
+                        display:block;
+                        width: 238px;
+                        line-height: 20px;
+                        color:#000;
+                    }
+
+                };
+                p:nth-of-type(2){
+                    font-size: 12px;
+                    
+                };
+                p:nth-of-type(3){
+                    font-size: 12px;
+                    height: 30px;
+                    line-height: 30px;
+                    a{
+                        color:#000;
+                        width:74px;
+                        display:block;
+                        text-overflow:ellipsis;
+                        white-space:nowrap;
+                        overflow:hidden;
+                        height: 30px;
+                        line-height: 30px;
+                        float: left;
+                        
+                    };
+                    span:nth-of-type(1){
+                        width: 10px;
+                        height: 30px;
+                        display:block;
+                        float: left;
+                    }
+                    span:nth-of-type(2){
+                        color:#FF6700;
+                        height: 30px;
+                        width:50px;
+                        display:block;
+                        float: left;
+                        line-height: 30px;
+                        
+                    }
+                    
+                };
+            };
+            .special_effects:nth-of-type(1){
+
+            };
+            .special_effects:nth-of-type(2){
+                left: 310px;
+
+            };
+            .special_effects:nth-of-type(3){
+                left: 620px;
+            };
+            .special_effects:nth-of-type(4){
+                margin-right: 0;
+                left: 930px;
+
+            };
+
+
+        }
+
+    }
+};
+// 小米视频
+#xiaomi_videos{
+    // padding-bottom: 28px;
+    padding-top: 22px;
+    background:#F5F5F5;
+    .container{
+        color:black;
+        .videos_header{
+            height: 58px;
+            h1{
+                float: left;
+                height: 58px;
+                line-height: 58px;
+                font-size: 26px;
+            };
+            span{
+                float: right;
+                height: 58px;
+                line-height: 58px;
+                font-size: 18px;
+                color:black;
+                margin-right: 20px;
+                position:relative;
+                i{
+                    display:block;
+                    width:20px;
+                    height: 20px;
+                    position:absolute;
+                    right: -24px;
+                    top: 18px;
+                    border-radius:50%;
+                    background:url('../img/smallerror.png') no-repeat 2px 2px;
+                    background-color:#aaa;
+                };
+                &:hover{
+                    color:#FF6700;
+                    i{
+                        background-color:#FF6700;
+                    }
+                }
+            };
+        };
+        .xiaomi_videos{
+            height:286px;
+            .special_effects{
+                height: 286px;
+                &:hover .videos_btn{
+                    background-color:#FF6700;
+                };
+                
+                img{
+                    height:180px;
+                }
+                p{
+                    text-align: center;
+                    // height: 30px;
+                    // line-height: 30px;
+                };
+                p:nth-of-type(1){
+
+                    a{
+                        &:hover{
+                            color:#FF6700;
+                        }
+                    }
+
+                };
+                a{
+                    position:relative;
+                    
+                    .videos_btn{
+                        width: 36px;
+                        height: 26px;
+                        display:block;
+                        border: 2px solid #fff;
+                        border-radius:12px;
+                        position:absolute;
+                        left: 10px;
+                        bottom: 8px;
+                        display:block;
+                        
+                        background:url('../img/videoerror.png') no-repeat 6px 1px;
+                    }
+                }
+                
+
+            }
+            
+        }
+        
+    };
+};
+
+
+// 小轮播图
+.lunbo{
+    width: 293px;
+    overflow:hidden;
+    border-top: 1px solid red;
+    position:relative;
+}
+.lunbo .luntupian{
+    width: 293px;
+    height: 414px;
+    padding-top: 34px;
+    box-sizing:border-box;
+    h3{
+        a{
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            color:#FF6700;
+            font-size: 14px;
+            display:block;
+        }
+        
+
+    };
+    p:nth-of-type(1){
+        width: 293px !important;
+        margin:0;
+        a{
+            height: 40px;
+            width: 293px !important;
+            line-height: 40px;
+            display:block;
+            text-align: center;
+            font-size: 22px;
+            color:#000;
+           
+            
+        }
+        
+    };
+    p:nth-of-type(2){
+        width: 263px !important;
+        margin:0 auto;
+        .content_describe{
+            //height: 30px;
+            width: 263px !important;
+            line-height: 30px;
+            display:block;
+            text-align: center;
+            font-size: 12px;
+            color:#ccc;
+           
+            
+        }
+        
+    };
+    span{
+        display:block;
+        color:#000;
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+    };
+    .content_img{
+        display:block;
+        width: 216px;
+        height: 154px;
+        margin:auto;
+        text-align: center;
+        
+        img{
+            width: 216px !important;
+            height: 154px !important;
+
+        }
+    }
+}
+.lunbo .luntupian ul li img{
+    width: 294px;
+    height: 414px;
+
+}
+.lunbo .luntupian ul{
+    position:relative;
+    width: 294px;
+    height: 414px;
+}
+.lunbo .luntupian ul>li{
+    width: 294px;
+    height: 414px;
+    position:absolute;
+    left:0px;
+    top: 0px;
+
+}
+.lunbo .luntupian ul>li>a{
+    display:block;
+    width: 294px;
+    height: 414px;
+}
+.lunbo .lunbtn{
+    width: 200px;
+    height: 30px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom: 10px;
+    text-align: center;
+    // padding:45px;
+    box-sizing:border-box;
+}
+.lunbo .lunbtn .active{
+    background:#fff;
+    border:2px solid #FF6700;
+    width: 5px;
+    height: 5px;
+}
+.lunbo .lunbtn>span{
+    display:block;
+    width:8px;
+    height: 8px;
+    border-radius:50%;
+    background:#ccc;
+    float:left;
+    margin:10px;
+}
+.lunbo .lunLeft,.lunbo .lunRight{
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    background:#ccc;
+    text-align: center;
+    font-weight: bold;
+    position:absolute;
+    color:black;
+}
+.lunbo .lunLeft{
+    left:0px;
+    top: 50%;
+    transform:translateY(-50%);
+
+}
+.lunbo .lunRight{
+    right:0px;
+    top: 50%;
+    transform:translateY(-50%);
+
+}
+
+
+
+// (为您推荐)轮播图
+#recommended_for_you{
+    background:#F5F5F5;
+    .container{
+        h1{
+            height: 58px;
+            line-height: 58px;
+            font-size: 26px;
+            float:left;
+        };
+        .recommended_for_you1{
+            #lunbobtn{
+                float: right;
+                padding-top: 16px;
+                p{
+                    width: 38px;
+                    display:inline-block;
+                    height: 24px;
+                    line-height: 26px;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    font-weight: bold;
+                    color:#000;
+                
+                };
+            
+            
+            };
+
+        };
+        
+        .recommended_for_you2{
+
+            #box {
+                width: 1230px;
+                height: 380px;
+                
+                // margin: 100px auto;
+                background: #F5F5F5;
+                position: relative;
+                overflow: hidden;
+            }
+            #moveimg li{
+                margin-right:12px; 
+                background:#fff ;
+                a{
+                    display:block;
+                    width: 140px;
+                    height: 140px;
+                    margin:50px auto;
+                    img{
+                        width: 140px;
+                        height: 140px; 
+                        display:block;
+                    }
+                };
+                p{
+                    height: 34px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-size: 16px;
+                    color:black;
+                    
+                };
+                p:nth-of-type(1) a{
+                    display:block;
+                    height: 34px;
+                    width: 100%;
+                    line-height: 34px;
+                    color:black;
+
+                };
+                p:nth-of-type(2) span{
+                    display:block;
+                    height: 34px;
+                    color:#FF6700;
+                    width: 100%;
+                    line-height: 34px;
+
+                }
+            }
+
+
+            /*li:200px*/
+
+
+            /*图片的样式*/
+
+            #box #imglist {
+                width: 1230px;
+                height: 380px;
+            };
+
+            #box #imglist ul {
+                width: 4720px;
+                height: 380px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            #box #imglist li {
+                width: 236px;
+                height: 360px;
+                float: left;
+                color: red;
+                font-size: 40px;
+                text-align: center;
+                line-height: 360px;
+                transition:all 0.5s linear;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            };
+            #box #imglist li:hover{
+                transform:translateY(-5px);
+                box-shadow:-8px 15px 30px -8px #DBDBEA,5px -1px 5px -2px #DBDBEA,8px 15px 30px -8px #DBDBEA,-5px -1px 5px -2px #DBDBEA;
+            }
+
+
+            /*焦点的样式*/
+
+            #light {
+                width: 1180px;
+                height: 20px;
+                /*background: #ccc;*/
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                text-align: center;
+            }
+
+            #light span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #D8D8D8;
+                text-align: center;
+                line-height: 20px;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+
+            #light span.active {
+                background: orange;
+            }
+
+
+            /*左右按钮*/
+
+            #posibtn {
+                width: 1180px;
+                height: 50px;
+                /*background: #ccc;*/
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -25px;
+            }
+
+            #posibtn p {
+                width: 50px;
+                height: 50px;
+                background: #004AB3;
+                color: #fff;
+                font-size: 40px;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+            }
+
+            #posibtn p:nth-child(1) {
+                float: left;
+                margin-left: 10px;
+            }
+
+            #posibtn p:nth-child(2) {
+                float: right;
+                margin-right: 10px;
+            } 
+        };
+
+
+    }
+};
+
+
+
+// 小米闪购
+#xiaomi_quickly_buy{
+    background:#F5F5F5;
+    .container{
+        h1{
+            height: 58px;
+            line-height: 58px;
+            font-size: 26px;
+            float:left;
+        };
+        .recommended_for_you1{
+            height: 58px;
+            margin-top: 15px;
+            #lunbobtn1{
+                float: right;
+                padding-top: 16px;
+                p{
+                    width: 38px;
+                    display:inline-block;
+                    height: 24px;
+                    line-height: 26px;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    font-weight: bold;
+                    color:#000;
+                
+                };
+            
+            
+            };
+
+        };
+        
+        .recommended_for_you2{
+
+            #box1 {
+                width: 975px;
+                height: 360px;
+                float: right;
+                
+                // margin: 100px auto;
+                background: #F5F5F5;
+                position: relative;
+                overflow: hidden;
+            };
+            #quickly_buy{
+                width: 234px;
+                margin-right: 10px;
+                height: 360px;
+                border-top: 1px solid red;
+                float: left;
+                
+            }
+            #moveimg1 li{
+                margin-right:12px; 
+                background:#fff ;
+                a{
+                    display:block;
+                    width: 140px;
+                    height: 140px;
+                    margin:50px auto;
+                    img{
+                        width: 140px;
+                        height: 140px; 
+                        display:block;
+                    }
+                };
+                p{
+                    height: 34px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-size: 16px;
+                    color:black;
+                    
+                };
+                p:nth-of-type(1) a{
+                    display:block;
+                    height: 34px;
+                    width: 100%;
+                    line-height: 34px;
+                    color:black;
+
+                };
+                p:nth-of-type(2) span{
+                    display:block;
+                    height: 34px;
+                    color:#FF6700;
+                    width: 100%;
+                    line-height: 34px;
+
+                }
+            }
+
+
+            /*li:200px*/
+
+
+            /*图片的样式*/
+
+            #box1 #imglist1 {
+                width: 992px;
+                height: 380px;
+            };
+
+            #box1 #imglist1 ul {
+                width: 4000px;
+                height: 380px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            #box1 #imglist1 li {
+                width: 236px;
+                height: 380px;
+                float: left;
+                color: red;
+                font-size: 40px;
+                text-align: center;
+                line-height: 380px;
+                // transition:all 0.5s linear;
+                // margin-top: 5px;
+                // margin-bottom: 15px;
+            };
+            #box1 #imglist1 li:hover{
+                //transform:translateY(-5px);
+                //box-shadow:-8px 15px 30px -8px #DBDBEA,5px -1px 5px -2px #DBDBEA,8px 15px 30px -8px #DBDBEA,-5px -1px 5px -2px #DBDBEA;
+            }
+
+            /*左右按钮*/
+
+          
+        };
+
+
+    }
+};
+
+
+
+// 其他
+.otherlist{
+    width: 100%;
+    height: 782px;
+    img{
+        display:block;
+        width: 100%;
+        height: 782px;
+    }
+
+
+};
+
+
+// 成功加入购物车
+#success_add_cart{
+    background:#F5F5F5;
+    .container{
+        height: 134px;
+        border-bottom: 1px solid #aaa;
+        position:relative;
+        i{
+            display:block;
+            width: 70px;
+            height: 70px;
+            background:url('../img/xiaomi_sprite_sheet.png') -360px -90px ;
+            position:absolute;
+            left:10px;
+            top: 30px;
+        }
+        .success_add_cart_l{
+            float: left;
+            width: 400px;
+            margin-left: 82px;
+            height: 134px;
+            p{
+                color:#000;
+            }
+            p:nth-of-type(1){
+                font-weight: bold;
+                height: 38px;
+                line-height: 38px;
+                font-size: 28px;
+                margin-top: 40px;
+                
+
+            };
+            p:nth-of-type(2){
+                height: 24px;
+                line-height: 24px;
+                font-size: 14px;
+
+            }
+            
+
+        };
+        .success_add_cart_r{
+            float: right;
+            height: 134px;
+            span{
+                display:block;
+                float: left;
+                width: 180px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                margin-top: 40px;
+        
+            };
+            span:nth-of-type(1){
+                color:#000;
+                background:#ccc;
+                margin-right: 16px;
+
+            };
+            span:nth-of-type(2){
+                color:#fff;
+                background:#FD6501;
+
+            };
+
+            
+            
+        }
+
+    }
+}

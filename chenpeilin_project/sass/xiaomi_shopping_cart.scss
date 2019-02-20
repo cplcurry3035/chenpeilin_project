@@ -1,0 +1,550 @@
+#xiaomi_shopping_cart{
+    // 头部
+    #header{
+        border-bottom: 2px solid #FD6501;
+        background:#fff;
+        .container{
+            height:100px;
+            h1{
+                width: 48px;
+                height: 48px;
+                float: left;
+                background:url('../img/xiaomi_sprite_sheet.png') -300px 0;
+                margin-top: 26px;
+                
+            };
+            p:nth-of-type(1){
+                height: 48px;
+                font-size: 32px;
+                font-weight: bold;
+                float: left;
+                margin:26px 14px 0 42px;
+                
+                
+            };
+            span{
+                display:block;
+                float: left;
+                height: 16px;
+                line-height: 16px;
+                margin-top: 44px;
+
+                
+            };
+            p:nth-of-type(2){
+                float: right;
+                font-size: 12px;
+                span{
+                    display:inline-block;
+                    height: 16px;
+                    padding:0 10px;
+                };
+                span:nth-of-type(1){
+                    border-right: 1px solid #ccc;
+                }
+
+                
+            }
+
+
+
+        }
+    };
+// 我的购物车
+#my_shopping_cart{
+    background:#F5F5F5;
+    .container{
+        // min-height:508px;
+        padding:38px 0 10px 0;
+        background:#F5F5F5;
+        // padding-right: 26px;
+        // box-sizing:border-box;
+        .list_header{
+            height: 70px;
+            background:#fff;
+            margin-bottom:3px;
+            width: 100%;
+            .header_col{
+                float: left;
+                line-height: 70px;
+                text-align: center;
+                color:#000;
+                height: 70px;
+                
+            };
+            .col_checked{
+                width: 100px;
+
+            }
+            .col_img{
+                width: 128px;
+                
+            }
+            .col_listname{
+                width: 373px;
+                
+            }
+            .col_price{
+                width: 167px;
+                
+            }
+            .col_num{
+                width: 151px;
+                
+            }
+            .col_total{
+                width: 187px;
+                
+            }
+            .col_operate{
+                width: 93px;
+                
+            }
+        };
+        //css- 购物车
+        .list_body{
+            // height: 402px;
+            background:#fff;
+            margin-bottom:18px;
+            padding-bottom: 20px;
+            
+            .item_box{
+                padding:18px 0;
+                width: 100%;
+                .item_box_list_information{
+                    height: 86px;
+                    .current_col{
+                        height: 86px;
+                        float: left;
+                        color:#000;
+                        text-align: center;
+                        line-height: 86px;
+    
+                    };
+                    .current_list_checkbox{
+                        width: 98px;
+                        text-align:left;
+                        input{
+                            margin-left: 30px;
+                        };
+                        
+
+                    };
+                    .current_list_img{
+                        width: 128px;
+                        img{
+                            width: 55px;
+                            height: 66px;
+                        }
+
+                    };
+                    .current_list_version_information{
+                        width: 373px;
+                        font-weight: bold;
+                        font-size: 18px;
+                        
+                        
+                    };
+                    .current_list_price {
+                        width: 167px;
+                        font-weight: bold;
+                        font-size: 18px;
+                        
+                    };
+                    .current_list_num{
+                        width: 151px;
+                        .add_delete{
+                            width: 148px;
+                            height: 38px;
+                            border: 1px solid #ccc;
+                            margin:24px auto 0;
+                            span{
+                                display:block;
+                                height: 38px;
+                                float: left
+                                ;
+                                line-height: 38px;
+                                font-weight: bold;
+                                font-size: 14px;
+                                color:#aaa;
+                            };
+                            #deletepiece{
+                                width: 36px;
+                                color:#aaa;
+                                font-weight: bold;
+                                text-align: center;
+                                color:#000;
+                                cursor:pointer;
+                                
+                                
+
+                            };
+                            #addpiece{
+                                width: 36px;
+                                color:#aaa;
+                                font-weight: bold;
+                                text-align: center;
+                                color:#000;
+                                cursor:pointer;
+                                
+                                
+
+                            };
+                            input{
+                                width: 76px;
+                                height: 38px;
+                                display:block;
+                                float: left;
+                                text-align: center;
+                                line-height: 38px;
+                                color:#aaa;
+                                
+
+                            }
+
+                        };
+                        .maxnum_of_buy{
+                            width: 148px;
+                            margin:3px auto;
+                            color:#aaa;
+                            text-align: center;
+                            font-size: 12px;
+                            height: 14px;
+                            line-height: 14px;
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                        
+                        
+                    };
+                    .current_list_subtotal{
+                        width: 187px;
+                        color:#FF6700;
+                        font-size: 18px;
+                        span{
+                            font-size: 18px;
+                            color:#FF6700;
+                        }
+                        
+                    };
+                    .current_list_cancel{
+                        width: 93px;
+                        cursor:pointer;
+                        
+                    };
+
+                }
+
+            };
+        };
+        //css- 购物车
+
+        
+
+    };
+};
+
+};
+// 结算
+.list_footer{
+    width: 1226px;
+    ;
+    margin:0 auto;
+    height:52px;
+    background:#fff;
+    .footer_col{
+        height:52px;
+        line-height: 52px;
+        text-align: center;
+        font-size: 14px;
+
+
+    };
+    .continue_shop{
+        height:20px;
+        line-height: 20px;
+        border-right: 1px solid #ccc;
+        margin-top: 16px;
+        display:block;
+        float:left;
+        width:108px;
+
+
+    };
+    .footer_piece{
+        height: 20px;
+        line-height: 20px;
+        margin-top: 16px;
+        float:left;
+        margin-left: 16px;
+        span{
+            color:#FF6700;
+        }
+    };
+    .list_total{
+        float:right;
+        width:222px !important;
+        height:50px;
+        color:#FF6700;
+        font-size: 18px;
+        font-weight: bold;
+
+        span{
+            font-size: 26px;
+        };
+
+
+
+    };
+    .account{
+        float: right;
+        width: 202px;
+        height:50px;
+        color:#fff;
+        font-size: 20px;;
+        background:#FF6700;
+
+
+
+    };
+};
+
+
+// 赠品
+.item_box_gift{
+    margin-left: 100px;
+    width: 1100px;
+    height: 96px;
+    background:#F5F5F5;
+    position:relative;
+    margin-bottom: 16px;
+    .triangle{
+        width:0px;
+        height: 0px;
+        border-bottom: 10px solid #F5F5F5;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position:absolute;
+        top: -10px;
+        left:40px;
+
+    };
+    i{
+        display:block;
+    };
+    .firsti{
+        width: 62px;
+        height:58px;
+        background:url('../img/xiaomi_sprite_sheet.png') 0 -170px;
+        margin-top: 12px;
+        margin-left: 18px;
+        float: left;
+    }
+    p{
+        float: left;
+        font-weight: bold;
+        height: 56px;
+        line-height: 38px;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 16px;
+
+        i{
+            width: 58px;
+            height: 18px;
+            display:block;
+            background:url('../img/xiaomi_sprite_sheet.png') -100px  -170px;
+        }
+        
+    };
+    span{
+        display:block;
+        text-align: center;
+        float: left;
+        height: 96px;
+        line-height: 96px;
+        margin-left: 430px;
+        width: 150px;
+        
+        
+    }
+};
+
+
+// 小米服务
+.item_box_service{
+    width: 1100px;
+    margin-left: 100px;
+    
+    .item_box_service_show{
+        background:#F5F5F5;
+        height: 96px;
+        width: 1100px;
+        .serve_li{
+            display:block;
+            width: 50px;
+            height:50px;
+            background:url('../img/xiaomi_sprite_sheet.png') -240px -90px;
+            margin:14px 52px 0 18px;
+            float:left;
+        };
+        p{
+            float: left;
+            width: 359px;
+            padding-top: 26px;
+            height: 70px;
+            span{
+                font-size: 12px;
+                line-height: 18px;
+            }
+            span:nth-of-type(1){
+                color:#000;
+                font-weight: bold;
+                font-size: 14px;
+                
+
+            }
+            
+        };
+        .serve_price,.serve_price,.serve_num,.serve_cancel,.serve_little_total{
+            display:block;
+            float: left; 
+            height: 96px;
+            line-height: 96px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+        .serve_price{   
+            width: 164px;   
+        };
+        .serve_num{
+            width: 160px;
+        };
+        .serve_little_total{
+            width: 186px;
+            color:#FF6700;
+        };
+        .serve_cancel{
+            width: 100px;
+        }
+
+
+    };
+    .item_box_service1,.item_box_service2{
+        background:#fff;
+        border: 1px solid #ccc;
+        height:48px;
+        margin-top: 5px;
+        i{
+            display:block;
+            width: 25px;
+            height:25px;
+            float: left;
+            background:url('../img/xiaomi_sprite_sheet.png') -200px -170px;
+            margin:10px 0 0 20px;
+        }
+        p{
+            width: 156px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            color:#000;
+            font-size: 14px;
+            float: left;
+            
+        };
+        p:nth-of-type(2){
+            color:#FF6700;
+        }
+    }
+
+};
+.item_box_list_information{
+    margin-bottom: 1px !important;
+    border-bottom: 1px solid #ccc;
+};
+// 米兔
+.xiaomi_rabbit{
+    height:508px;
+    background:#f5f5f5;
+    // display:none;
+    i{
+        display:block;
+        width: 360px;
+        height: 280px;
+        margin:100px 74px 0 124px;
+        background:url('../img/xiaomi_rabbit.png');
+        float: left;
+        
+    };
+    .xiaomi_rabbit_right{
+        float: left;
+        h1{
+            font-weight: bold;
+            color:#B0B0B0;
+            font-size: 42px;
+            height: 86px;
+            line-height: 86px;
+            margin-top: 156px;
+        }
+        span{
+            display:block;
+            width: 174px;
+            height:50px;
+            line-height: 50px;
+            text-align: center;
+            color:#fff;
+            font-weight: bold;
+            background:#FF6700;
+            font-size: 14px;
+            
+        }
+    }
+
+};
+
+// 登录状态
+#header{
+    .container{
+        position:relative;
+        .pul{
+            height:100px !important;
+        }
+        .loginul{
+            position:absolute;
+            right: 8px;
+            top: 100px;
+            background:#fff;
+            width: 150px;
+            z-index:200;
+            padding:10px 0;
+            box-shadow:1px 3px 3px 0px #ccc,-1px 2px 3px 0px #ccc;
+            border: 1px solid #FF6700;
+            display:none;
+            li{
+                color:#000;
+                width: 100%;
+                height:30px;
+                line-height: 30px;
+                text-align: center;
+                &:hover{
+                    background:#eee;
+                    color:#FF6700;
+                    // box-shadow:1px 3px 3px 0px,-1px 2px 3px 0px;
+                }
+
+            };
+
+        };
+    };
+    
+
+};
+#unamestatus{
+    cursor:pointer;
+}
+
+ 

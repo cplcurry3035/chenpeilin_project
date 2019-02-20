@@ -1,0 +1,153 @@
+﻿cid,sortid,listname,hostimg,simple_describe,particular_describe,versions_information,starid,original_price,present_price,version_color,Explanation1,Explanation2,color_img
+201901,201900,小米8 青春版,../img/listimgs/201901_01.jpg,潮流镜面渐变色，2400万自拍旗舰,潮流镜面渐变色 / 2400万自拍旗舰 / 7.5mm超薄机身 / 6.26’小刘海全面屏 / AI裸妆美颜 / 骁龙660AIE处理器,"[
+                                {
+                                    ""version_name"":""4GB+6GB 全网通"",
+                                    ""original_price"":1399,
+                                    ""present_price"":1299,
+                                    ""color"":[""深空灰""],               
+                                    ""currentcolornum"":[100]
+                                },
+                                {
+                                    ""version_name"":""6GB+6GB 全网通"",
+                                    ""original_price"":1699,
+                                    ""present_price"":1499,
+                                    ""color"":[""深空灰"",""梦幻蓝"",""暮光金""],               
+                                    ""currentcolornum"":[100,200,300]
+
+                                },
+                                {
+                                    ""version_name"":""6GB+128GB 全网通"",
+                                    ""original_price"":"""",
+                                    ""present_price"":1999,
+                                    ""color"":[""深空灰"",""梦幻蓝"",""暮光金""],               
+                                    ""currentcolornum"":[40,50,60]
+                                }
+                            ]",201901,1399,1299,"[""深空灰"",""梦幻蓝"",""暮光金""]",「4GB+64GB 深空灰 1299元」,「6GB+64GB 全色系1499元」,"[  
+                    {  
+                        ""img1"":""../img/listimgs/201901_02.jpg"",
+                        ""img2"":""../img/listimgs/201901_03.jpg"",
+                        ""img3"":""../img/listimgs/201901_04.jpg"",
+                        ""img4"":""../img/listimgs/201901_05.jpg""
+                    },
+                    {
+                        ""img1"":""../img/listimgs/201901_06.jpg"",
+                        ""img2"":""../img/listimgs/201901_07.jpg"",
+                        ""img3"":""../img/listimgs/201901_08.jpg"",
+                        ""img4"":""../img/listimgs/201901_09.jpg""
+
+
+                    },
+                    {
+                        ""img1"":""../img/listimgs/201901_10.jpg"",
+                        ""img2"":""../img/listimgs/201901_11.jpg"",
+                        ""img3"":""../img/listimgs/201901_12.jpg"",
+                        ""img4"":""../img/listimgs/201901_13.jpg""
+
+                    }
+                ]"
+201902,201900,小米8,../img/listimgs/201902_01.jpg,相机全新升级，骁龙845,相机全新升级到世界前三的拍照体验 / 960帧超慢动作 / 手持超级夜景 / 全球首款双频GPS / 骁龙845处理器 / 红外人脸解锁 / AI变焦双摄 / 三星 AMOLED 屏,"[
+                                {
+                                    ""version_name"":""4GB+6GB 全网通"",
+                                    ""version_id"":1,
+                                    ""original_price"":1399,
+                                    ""present_price"":1299,
+                                    ""color"":[""深空灰""],               
+                                    ""currentcolornum"":[100]
+                                },
+                                {
+                                    ""version_name"":""6GB+6GB 全网通"",
+                                    ""version_id"":2,
+                                    ""original_price"":1699,
+                                    ""present_price"":1499,
+                                    ""color"":[""深空灰"",""梦幻蓝"",""暮光金""],               
+                                    ""currentcolornum"":[100,200,300]
+
+                                },
+                                {
+                                    ""version_name"":""6GB+128GB 全网通"",
+                                    ""version_id"":3,
+                                    ""original_price"":1999,
+                                    ""present_price"":1999,
+                                    ""color"":[""深空灰"",""梦幻蓝"",""暮光金""],               
+                                    ""currentcolornum"":[40,50,60]
+                                }
+                            ]",201901,2699,2299,"[""深空灰"",""梦幻蓝"",""暮光金""]",「小米8 6GB+64GB 领券再减200元，券后价2099元」,小米8 8GB+128GB 领券再减200元，券后价2699元」,"[  
+                    {  
+                        ""img1"":""../img/listimgs/201902_01.jpg"",
+                        ""img2"":""../img/listimgs/201901_03.jpg"",
+                        ""img3"":""../img/listimgs/201901_04.jpg"",
+                        ""img4"":""../img/listimgs/201901_05.jpg""
+                    },
+                    {
+                        ""img1"":""../img/listimgs/201901_06.jpg"",
+                        ""img2"":""../img/listimgs/201901_07.jpg"",
+                        ""img3"":""../img/listimgs/201901_08.jpg"",
+                        ""img4"":""../img/listimgs/201901_09.jpg""
+
+
+                    },
+                    {
+                        ""img1"":""../img/listimgs/201901_10.jpg"",
+                        ""img2"":""../img/listimgs/201901_11.jpg"",
+                        ""img3"":""../img/listimgs/201901_12.jpg"",
+                        ""img4"":""../img/listimgs/201901_13.jpg""
+
+                    }
+]"
+201903,201900,小米8 SE,../img/listimgs/201903_01.jpg,三星 AMOLED 全面屏,三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍,"[
+                                {
+                                    ""version_name"":""4GB+6GB 全网通"",
+                                    ""version_id"":1,
+                                    ""original_price"":1399,
+                                    ""present_price"":1299,
+                                    ""color"":[""深空灰""],               
+                                    ""currentcolornum"":[100]
+                                },
+                                {
+                                    ""version_name"":""6GB+6GB 全网通"",
+                                    ""version_id"":2,
+                                    ""original_price"":1699,
+                                    ""present_price"":1499,
+                                    ""color"":[""深空灰"",""梦幻蓝"",""暮光金""],               
+                                    ""currentcolornum"":[100,200,300]
+
+                                },
+                                {
+                                    ""version_name"":""6GB+128GB 全网通"",
+                                    ""version_id"":3,
+                                    ""original_price"":1999,
+                                    ""present_price"":1999,
+                                    ""color"":[""深空灰"",""梦幻蓝"",""暮光金""],               
+                                    ""currentcolornum"":[40,50,60]
+                                }
+                            ]",201901,1999,1699,"[""深空灰"",""梦幻蓝"",""暮光金""]",,,"[  
+                    {  
+                        ""img1"":""../img/listimgs/201903_01.jpg"",
+                        ""img2"":""../img/listimgs/201901_03.jpg"",
+                        ""img3"":""../img/listimgs/201901_04.jpg"",
+                        ""img4"":""../img/listimgs/201901_05.jpg""
+                    },
+                    {
+                        ""img1"":""../img/listimgs/201901_06.jpg"",
+                        ""img2"":""../img/listimgs/201901_07.jpg"",
+                        ""img3"":""../img/listimgs/201901_08.jpg"",
+                        ""img4"":""../img/listimgs/201901_09.jpg""
+
+
+                    },
+                    {
+                        ""img1"":""../img/listimgs/201901_10.jpg"",
+                        ""img2"":""../img/listimgs/201901_11.jpg"",
+                        ""img3"":""../img/listimgs/201901_12.jpg"",
+                        ""img4"":""../img/listimgs/201901_13.jpg""
+
+                    }
+]"
+201904,201911,红米6,../img/listimgs/201904_01.jpg,小屏高性能的双摄手机,小屏高性能的双摄手机 / 后置1200万 AI双摄 / 12nm八核处理器 / AI 人脸解锁,,201901,799,729,,,,
+201905,201911,红米6A,../img/listimgs/201905_01.jpg,好用好看不贵,好用好看不贵 / 12nm高性能处理器 / 1300万高清相机 / “小杨柳腰”机身,,201901,549,599,,,,
+201906,201912,黑鲨游戏手机 Helo,../img/listimgs/201906_01.jpg,双液冷，更能打,双液冷 / 独显+AMOLED全面屏 / Gamer Studio / X+1天线 / 骁龙845 / 正面双扬声器 / 标配二代手柄 / 一键Shark模式 / AI灯效,,201901,2999,3199,,,,
+201907,201900,小米MIX 2S,../img/listimgs/201907_01.jpg,陶瓷机身 手机中的艺术品,陶瓷机身 手机中的艺术品 / 搭载高通骁龙845 年度旗舰处理器 / AI超感光双摄，DxO百分相机 / 高效 Qi 无线充电,,201901,2399,3299,,,,
+201908,201900,小米MIX3,../img/listimgs/201908_01.jpg,磁动力滑盖全面屏,磁动力滑盖全面屏 / 前后旗舰 AI 双摄 / 四曲面彩色陶瓷机身 / 高效 10W 无线充电,,,,3299,,,,
+201909,201900,小米6X,../img/listimgs/201909_01.jpg,轻薄美观的拍照手机,轻薄美观的拍照手机 / 前置2000万“治愈系”自拍 / 后置2000万 AI双摄 / 标配骁龙660 AIE处理器,,,1199,1599,,,,
+201910,201911,红米note5,../img/listimgs/201910_01.jpg,红米国民品质，拍照专家,红米国民品质，拍照专家 / AI双摄/5.99”全面屏 / 骁龙636处理器/4000mAh大电量 / 超过10000 项严苛检测，70%以上供应商与苹果供应商重叠,,,839,1099,,,,
+201911,201911,红米6 Pro,../img/listimgs/201911_01.jpg,高颜值大电量 红米旗舰,高颜值大电量 红米旗舰 / 异形全面屏 19:9 FHD＋ / 后置1200万 AI双摄,,,1099,1299,,,,

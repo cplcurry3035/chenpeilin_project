@@ -1,0 +1,136 @@
+#phone_shell{
+    width: 100%;
+    background:#f5f5f5;
+    .phone_shell{
+        width: 100%;
+        .container{
+            .header{
+                height: 78px;
+                
+                .header_l{
+                    height: 78px;
+                    float:left;
+                    // width: 380px;
+                    span{
+                        display:'block';
+                        float: left;
+                        height: 24px;
+                        font-size: 14px;
+                        color:#000;
+                        margin-top: 30px;
+                        padding:0px 30px;
+                        border-right: 1px solid #ccc;
+                        
+                    };
+                    span:nth-of-type(3){
+                        color:#FF6700;
+                        font-weight: bold;
+                        position:relative;
+                        i{
+                            display:block;
+                            position:absolute;
+                            width: 10px;
+                            height:10px;
+                            right:18px;
+                            top:2px;
+                            background:url('../img/uparror.png');
+                            // &:hover{
+                            //     transform:rotate(180deg) ;
+                            // }
+                        }
+                        
+                    }
+                    span:nth-of-type(4){
+                        border-right: 0 none;
+                    };
+
+                    
+
+                };
+                .header_r{
+                    height: 78px;
+                    float:right;
+                    img{
+                        margin-top: 30px;
+                    }
+                    
+                    
+
+                }
+            };
+            
+           
+        }
+    }
+
+};
+.shell_ul{
+    // height: 200px;
+    li{
+        width: 200px;
+        height: 310px;
+        background:#fff;
+        float:left;
+        margin-right: 8px;
+        margin-bottom: 12px;
+        padding:30px 50px 0 50px;
+        p{
+            text-align: center;
+            height:20px;
+            line-height: 20px;
+            margin-top: 10px;
+            
+        };
+        p:nth-of-type(1){
+            color:#aaa;
+            font-weight: bold;
+            font-size: 26px ;
+            height: 26px;
+
+        };
+        p:nth-of-type(2){
+            color:#000;
+
+        };
+        p:nth-of-type(3){
+            color:#FF6700;
+
+        };
+
+    }
+    li:nth-child(4n){
+        margin-right: 0;
+    }
+
+};
+
+
+#page{
+    height: 40px;
+    ul{
+        margin:0 auto;
+        width: 300px;
+        height: 40px;
+        li{
+            float: left;
+            width: 48px;
+            height:30px;
+            border: 1px solid #ccc;
+            background:#fff;
+            text-align:center;
+            line-height: 30px;
+            margin:5px 5px;
+            font-weight: bold;
+            
+            
+            
+        };
+        #active{
+            color:#fff;
+            background:#757575;
+        }
+    }
+};
+#order_price{
+    cursor:pointer;
+}

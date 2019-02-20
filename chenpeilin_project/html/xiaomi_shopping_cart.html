@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 陈培林项目:我的购物车 -->
+    <meta charset="UTF-8" />
+    <title>我的购物车- 小米商城</title>
+    <!-- 小米logo小图标 -->
+    <link rel="icon" href="../img/xiaomi.ico"  type="image/x-icon"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_listbase.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xiaomi_shopping_cart.css" />
+    <!-- js -->
+    
+    <!-- <script src='../lib/jQuery/jquery-3.2.1.min.js'></script> -->
+    <!-- <script src='../lib/jQuery/jquery-1.10.1.min.js'></script>
+    <script src='../js/specialEffects.js'></script> 
+    <script src='../js/common.js'></script>
+    <script src='../js/xiaomi_shopping_cart.js'></script>  --> 
+    <script src='../js/require.js' data-main='../js/home.js'></script> 
+
+    
+</head>
+<body>
+    <div id="xiaomi_shopping_cart">
+        <!-- 头部-->
+        <div id="header">
+            <div class="container">
+                <h1></h1>
+                <p>我的购物车</p>
+                <span>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算
+                </span>
+                <!-- style='padding:0 20px;' -->
+                <p class='pul' style='height:100px_;'>
+                        <span id='unamestatus' >
+                        登录
+                        </span>
+                        <i></i>
+                    <span class='statustwo'>注册</span>
+                </p>
+                <ul class='loginul'>
+                            <li>个人中心</li>
+                            <li>评价晒单</li>
+                            <li>我的喜欢</li>
+                            <li>小米账户</li>
+                            <li id='login_out'>退出登录</li>
+                </ul>
+                    
+            </div>
+        </div>
+<!-- ******************************************************* -->
+        <!-- 我的购物车 -->
+        <div id="my_shopping_cart">
+            <div class="container">
+                
+                <!-- <div class="list_header">
+                    <div class="col_checked header_col">
+                        <input type="checkbox" id="selectall" />
+                        全选
+                    </div>
+                    <div class="col_img header_col col_delete_all">
+                        删除选中        
+                    </div>
+                    <div class="col_listname header_col">商品名称</div>
+                    <div class="col_price header_col">单价</div>
+                    <div class="col_num header_col">数量</div>
+                    <div class="col_total header_col">小计</div>
+                    <div class="col_operate header_col">操作</div>
+                </div> -->
+                
+                <!-- <div class="list_body">
+                    
+                    <div class='item_box'>
+                        
+                        <div class="item_box_list_information">
+                            
+                            <div class="current_list_checkbox current_col">
+                                <input type="checkbox" />
+                            </div>
+                            
+                            <div class="current_list_img current_col">
+                            <img src="../img/xiaomi8.png" alt="" />
+                                
+                            </div>
+                            
+                            <div class="current_list_version_information current_col">
+                            小米8 SE 全网通版 6GB内存 128GB 深灰
+                                
+                            </div>
+                            
+                            <div class="current_list_price current_col">
+                            <span>1699</span>元
+                            </div>
+                            
+                            <div class="current_list_num current_col">
+                                <div class="add_delete">
+                                    
+                                    <span id='deletepiece'>-</span>
+                                    
+                                    <input type="text" value="1" />
+                                    
+                                    <span id='addpiece'>+</span>
+                                </div>
+                                
+                                <div class="maxnum_of_buy">
+                                    还可买 <span>8</span> 件
+                                </div>
+
+                            </div>
+                            
+                            <div class="current_list_subtotal current_col">
+                            <span>1699</span>元
+                            </div>
+                            
+                            <div class="current_list_cancel current_col">
+                            &times;
+                            </div>
+
+                                
+                            </div>
+
+                        </div>
+                        
+                        <div class="item_box_gift">
+                            <i class='firsti'></i>
+                            <p>
+                            <i></i>
+                            米粉卡 日租卡</p>
+                            <span>1</span>
+                            <div class="triangle">
+                            </div>
+                        </div>
+                       
+                        <div class="item_box_service">
+                            <div class="item_box_service_show">
+                                <i class='serve_li'></i>
+                                <p>
+                                    <span>  
+                                    全年意外保障服务</span>
+                                    <br />
+                                    <span>
+                                        手机意外摔落/进水/碾压等损坏
+                                    </span>
+                                </p>
+                                <span class='serve_price'>99元</span>
+                                <span class='serve_num'>1</span>
+                                <span class='serve_little_total'>99元</span>
+                                <span class='serve_cancel'>&times;</span>
+                            </div>
+                            <div class="item_box_service1">
+                                <i></i>
+                                <p>
+                                    <span>意外保障服务</span>
+                                    <span>99元</span>
+                                </p>
+                                <p>
+                                    了解<span>意外保护</span>>>
+                                </p>
+                                
+                            </div>
+                            <div class="item_box_service1">   
+                                <i></i>
+                                <p>
+                                    <span>碎屏保障服务</span>
+                                    <span>59元</span>
+                                </p>
+                                <p>
+                                    了解<span>意外保护</span>>>
+                                </p>      
+                            </div>
+                            <div class="item_box_service2">   
+                                <i></i>
+                                <p>
+                                    <span>延长保修服务</span>
+                                    <span>29元</span>
+                                </p>
+                                <p>
+                                    了解<span>延长保修</span>>>
+                                </p>     
+                            </div>
+                            
+                                
+                            </div>
+                        </div>   
+                    </div>
+                    
+                </div>  -->
+                
+                <!-- <div class="list_footer">
+                    <span class='continue_shop footer_col'>继续购物</span>
+                    <p  class='footer_col footer_piece'>
+                        共
+
+                        <span class='allpiece'>
+                            2
+                        </span>
+
+                        件商品,已选择
+
+                        <span class='selectpiece'>
+                            3
+                        </span>
+                        件
+                    </p>
+                    <p class='footer_col account'>去结算
+                    </p>
+                    <p class='list_total footer_col'>
+                        合计:<span>1698</span>元
+                    </p>
+                    
+                </div>  -->
+                <!-- <div class='xiaomi_rabbit'>  
+                    <i></i>
+                    <div class="xiaomi_rabbit_right">
+                        <h1>您的购物车还是空的!</h1>
+                        <span>马上去购物</span>
+                    </div>
+                </div> -->
+
+                
+            </div>
+        </div>
+        <!-- 我的购物车 -->
+<!-- ******************************************************* -->
+        <!-- 其他商品 -->
+        <div class='otherlist'>
+            <img src="../img/otherlist.png" alt="" />
+        </div>
+        <!-- 底部(公共部分) -->
+        <div id="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <ul class="clearfix">
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        预约维修服务
+                        </a>
+                        </li>
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        7天无理由退货
+                        </a>
+                        </li>
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        15天免费换货
+                        </a>
+                        </li>
+                        <li>
+                        <a href="javascript:;">
+                        <i></i>
+                        满150元包邮
+                        </a>
+                        </li>
+                        <li >
+                        <a href="javascript:;" style='border-right:0 none;'>
+                        <i></i>
+                        520余家售后网点
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_middle_top">
+                    <div class="footer_middle_top_left">
+                        <dl>
+                            <dt>帮助中心1</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心2</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心3</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心4</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心5</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        <dl>
+                            <dt>帮助中心6</dt>
+                            <dd>账户管理</dd>
+                            <dd>购物指南</dd>
+                            <dd>订单操作</dd>
+                        </dl>
+                        
+                    </div>
+                    <div class="footer_middle_top_right">
+                        <p>400-100-5678</p>
+                        <p>周一至周日 8:00-18:00</p>
+                        <p>(仅市话收费)</p>
+                        <p>联系客服</p>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer_middle_bottom">
+                    <i></i>
+                    <p>
+                       <span> 小米商城 | MIUI | 米家 | 米聊 | 多看 | 游戏 | 路由器 | 米粉卡 | 政企服务 | 小米天猫店 | 隐私政策 | 商城用户协议 | 账号协议 | 问题反馈 | 廉正举报 | 诚信合规 | Select Regionbr </span>  <br /> 
+
+                        <span>©</span> mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号 <br />
+                        （京）网械平台备字（2018）第00005号 b    互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械公告  
+                        增值电信业务许可证 <br />     网络食品经营备案（京）【2018】WLSPJYBAHF-12   食品经营许可证 <br />   
+                        违法和不良信息举报电话：185-0130-1238 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                    <img src="../img/all.png" alt="" style='margin-left:124px;'/>
+                    
+                </div>
+                <div class="footer_bottom">
+                    探索黑科技，小米为发烧而生
+                    
+                </div>
+        </div>
+    </div>
+</body>
+</html>
